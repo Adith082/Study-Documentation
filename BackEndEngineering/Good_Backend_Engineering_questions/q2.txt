@@ -1,0 +1,1 @@
+Talk to me about repeatable read isolation level please

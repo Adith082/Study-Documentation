@@ -1,0 +1,7 @@
+
+(imagine any database any backend stack any reverse proxy for load balancing, application can be either desktop or web)
+
+imagine you have an application. a user is currently seeing a page that contains a buttons.
+the moment user clicks on that button, the application freezes for exactly 60 seconds and then provides its response (for example lets say a table)
+
+Now, what do you do to identify the performance problem in the whole stack?
