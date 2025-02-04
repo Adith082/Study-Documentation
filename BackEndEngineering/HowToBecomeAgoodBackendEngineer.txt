@@ -1,0 +1,38 @@
+Honestly, there is no short-cut or exact road map to become better at backend engineering. What we can do is stick with fundamentals
+and it can be a good head-start!
+
+Let us look at the fundamental concepts shall we?
+
+Communication Protocols
+-------------------------
+              (communication protocols link)
+       frontend <------------------------> backend
+almost all of these protocols are built on top of TCP and UDP
+
+it is very important to have understanding of TCP(connection oriented protocol, provides reliable delivery) and UDP(message based connectionless, does not guarantee message delivery but faster and start).
+
+HTTP/2 introduced application level stream.
+
+what is TCP Head of line problem? How it was solved?
+
+
+
+
+
+Web Servers
+--------------
+
+Database Engineering
+--------------------
+
+Proxies
+-------
+
+Messaging Systems
+------------------
+
+Message Formats
+-----------------
+
+Security
+------------
