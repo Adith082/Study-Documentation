@@ -36,3 +36,13 @@ Message Formats
 
 Security
 ------------
+man in the middle attack : evesdropping or changing messages between two diffferent entities.
+we can get rid of this thing by introducing encryption of messages and authentication of entities using TLS (transport layer security)
+
+denial of service attack : 
+when real clients not able to request because of fake flooded requests or sending special payload
+(we can use a firewall or layer 7ddos protection layer to block illegitimate requests)
+
+XSS cross side scripting (client side security attack)
+
+sql injection (server side security attack)
