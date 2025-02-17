@@ -1,0 +1,18 @@
+Andrej said,
+
+out of several llms out there, meta
+open sourced llama270b. they open sourced everything (architecture, parameters and runnable code) (even open AI did not open sourced their architecture)
+although openAI chatgpt model, you can utilize it through API call
+
+basically Andrej talked about how inference can be done by just running that .c file which contains the NN architecture its forward passing (No training needed as its parameters are already here)
+
+how parameters are collected?
+
+from the internet and they were trained on GPUs based on metas NN architecture. 
+
+you can call the parameters as basically a zip file (lossy compression) version of the internet. (basically, how this llama was trained)
+
+
+the hard part is getting the parameters. running the nn on those parameters is fairly computationally very cheap.
+
+
