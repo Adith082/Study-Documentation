@@ -1,3 +1,4 @@
+video from 2024
 Andrej said,
 
 out of several llms out there, meta
@@ -14,5 +15,15 @@ you can call the parameters as basically a zip file (lossy compression) version 
 
 
 the hard part is getting the parameters. running the nn on those parameters is fairly computationally very cheap.
+
+what llms do is basically predict the next word and then the predicted next word gets into that same model and predicts next word again.
+its like a lossy compression for text distributions which can also be called as "dreams" meaning not everything is memorized and not every thing is hallucinated either!
+
+
+how do these LLMS work internally?
+
+well, we know the underlying architecture (transformers) and its operations but we don't know billions of parameters work.
+also, the knowledge that these models have is kind of weird. models don't provide same response if we leverage its knowledge by asking it from different directions.
+Again, all we can do is measure LLMS behavior through asking questions and analyzing answers but definitely don't know exactly how are they providing answers (Interpretability field is currently working on this part but its in its infantry state right now ()).
 
 
