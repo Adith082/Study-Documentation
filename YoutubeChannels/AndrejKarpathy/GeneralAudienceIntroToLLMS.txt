@@ -32,6 +32,13 @@ what we can do is create our own dataset by hiring bunch of people and tell them
 big AI companies did to improve their model). After creating this dataset, we can train it to our existing big LLM model which was pretrained having previous knowledge of the internet.
 
 this process above can be called as finetuning which would result in giving us a more organized LLM. why?
-because now when you ask questions, it will give you answers in a style that was leveraged through finetuning following knowledges from both this and previous iteration of datasets!   
+because now when you ask questions, it will give you answers in a style that was leveraged through finetuning following knowledges from both this and previous iteration of datasets!  
+
+building the base llms (llms which are not finetuned using QnA dataset) are extremely expensive where as finetuning them is not that costly at all.
+even though response of base model is not convenient for user but utilizing the knowledge for future finetuning would result in modern assistants like ChatGPT, Gemini etc!
+
+There is also another stage of finetuning which can be called as utilizing comparison labels.
+ 
+
 
 
