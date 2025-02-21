@@ -39,6 +39,14 @@ even though response of base model is not convenient for user but utilizing the 
 
 There is also another stage of finetuning which can be called as utilizing comparison labels.
  
+in 3rd stage of fine tuning, we get several answers of same questions from 2nd stage finetuned version and let people compare which output seems better and that better version
+gets higher priority in 3rd stage finetuning. this process can be called as reinforcement learning through humnan feedback (rlhf)
+
+the labeling instruction is actually not completely manually taken from human. Infact its a collaboration of human and llms.
+
+recent leaderboard shows topranked language models. these llms are ranked by calculating ELO score.
+how its calculated? imagine you ask questions and get answers from lets say 2 llms but you don't know these llms name. and when you select the best answer is how that llm gets better ELO score. on that leaderboard top models have high elo scores where the open source ones do not possess higher ELO score.
+
 
 
 
