@@ -26,4 +26,12 @@ well, we know the underlying architecture (transformers) and its operations but 
 also, the knowledge that these models have is kind of weird. models don't provide same response if we leverage its knowledge by asking it from different directions.
 Again, all we can do is measure LLMS behavior through asking questions and analyzing answers but definitely don't know exactly how are they providing answers (Interpretability field is currently working on this part but its in its infantry state right now ()).
 
+creating AI assistant by utilizing fine-tuning!
+what if we want to turn these big LLMs into personal assistant which would provide answeres to our questions in a very helpful format and manner?
+what we can do is create our own dataset by hiring bunch of people and tell them to imagine any question and give answers to them but following our own labeling instructions which would be let's say user friendly (exactly what 
+big AI companies did to improve their model). After creating this dataset, we can train it to our existing big LLM model which was pretrained having previous knowledge of the internet.
+
+this process above can be called as finetuning which would result in giving us a more organized LLM. why?
+because now when you ask questions, it will give you answers in a style that was leveraged through finetuning following knowledges from both this and previous iteration of datasets!   
+
 
