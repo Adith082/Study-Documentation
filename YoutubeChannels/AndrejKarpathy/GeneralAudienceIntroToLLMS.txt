@@ -45,7 +45,37 @@ gets higher priority in 3rd stage finetuning. this process can be called as rein
 the labeling instruction is actually not completely manually taken from human. Infact its a collaboration of human and llms.
 
 recent leaderboard shows topranked language models. these llms are ranked by calculating ELO score.
-how its calculated? imagine you ask questions and get answers from lets say 2 llms but you don't know these llms name. and when you select the best answer is how that llm gets better ELO score. on that leaderboard top models have high elo scores where the open source ones do not possess higher ELO score.
+how its calculated? imagine you ask questions and get answers from lets say 2 llms but you don't know these llms name. and when you select the best answer is how that llm gets better ELO score. on that leaderboard, top models have high elo scores where the open source ones do not possess higher ELO score.
+
+LLM scaling laws suggest that even if you can't improve the algorithms but want to improve llm models performance on various metrics (such as next word predictions etc.)
+, you can simply add more gpus and add more data to get that improvement.
+
+based on query llms can understand which tools (such as calculator, webbrowsing, DALL-E etc) to use! and provide relevant information.
+example: imagine for a query gpt provides you a table of numbers in different columns. if you query to plot these inputs, what chatgpt would do is utlize matplot library and literally code
+it in python and get the result which it would show as output!
+
+llms can not only generate but also see images and perform tasks based on whats in that image! 
+example: imagine a picture having a notebook. Inside that notebook, we have a website designed by pencil.
+chatgpt would see this picture and literally code that website using html and java script and you have the website!
+
+modern llms also possess speech to speech communication! another multimodal functionality!
+
+
+future directions of development in LLMS
+-----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
