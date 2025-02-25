@@ -50,7 +50,7 @@ how its calculated? imagine you ask questions and get answers from lets say 2 ll
 LLM scaling laws suggest that even if you can't improve the algorithms but want to improve llm models performance on various metrics (such as next word predictions etc.)
 , you can simply add more gpus and add more data to get that improvement.
 
-based on query llms can understand which tools (such as calculator, webbrowsing, DALL-E etc) to use! and provide relevant information.
+based on query, llms can understand which tools (such as calculator, webbrowsing, DALL-E etc) to use! and provide relevant information.
 example: imagine for a query gpt provides you a table of numbers in different columns. if you query to plot these inputs, what chatgpt would do is utlize matplot library and literally code
 it in python and get the result which it would show as output!
 
@@ -63,6 +63,19 @@ modern llms also possess speech to speech communication! another multimodal func
 
 future directions of development in LLMS
 -----------------------------------------------------
+
+can we inject system2 work of our brain into LLMS?
+--------------------------------------------------
+if I say what is the result of 2 + 2 you would quickly give me an anwswer which is 4 instinctively. 
+if If I say what is the result of 24*78 then you would think about it, give it time, do some logical operation and then provide answer. (refernce: book called thinking fast and slow)
+
+our brain works in these 2 ways. one, where you provide answers to questions instinctively which we can call system 1 and another where we provide answer by utilizing
+a tree of thought and make complex decisions which takes time. another example of system1 and system2 can be respectively speed chess and classical chess (longer time or unlimited time).
+currently (in 2024) we have llms that has system 1 capability but lack system 2 option (probably available now in 2025). 
+if llms can possess system 2 capability, then querying an llm to "make decision but you can take your time" would do the trick! (it would utilize system 2!)
+
+
+
 
 
 
