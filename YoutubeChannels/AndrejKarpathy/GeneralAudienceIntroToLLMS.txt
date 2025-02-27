@@ -75,6 +75,28 @@ currently (in 2024) we have llms that has system 1 capability but lack system 2 
 if llms can possess system 2 capability, then querying an llm to "make decision but you can take your time" would do the trick! (it would utilize system 2!)
 
 
+for LLMS, can we achieve self-improvement in the general case?
+----------------------------------------------------------------
+
+deep-mind created an alpha-go that can play the game "go" which is first created by imitating(training) games played by better human players
+but it could not surpass humans due to its training process mentioned before. then they introduced self-improvement(to surpass humans) using which they created a reward function
+that would tell them what would be their probability of winning, losing for a certain move (like reinforcement learning probably).
+
+for llms in narrow domain, it can be possible to create certain reward function  but in general case, it is still a big question of how we set proper criterion for a reward function.
+
+LLMS app store?
+you can customize your own gpt if you want.
+you can upload files which gpt would use Retrieval augmented generation (RAG) to use those files as reference and provide you response! much like when gpt's browse through different websites and provide response and reference of resources.
+
+LLM's are no longer just next word predictors, they are much more than that, you can call them as an emerging Operating System that would does various tasks or might do in a few years.
+
+- 
+
+- 
+
+
+
+
 
 
 
