@@ -22,7 +22,7 @@ its like a lossy compression for text distributions which can also be called as 
 
 how do these LLMS work internally?
 
-well, we know the underlying architecture (transformers) and its operations but we don't know billions of parameters work.
+well, we know the underlying architecture (transformers) and its operations but we don't know how billions of parameters work.
 also, the knowledge that these models have is kind of weird. models don't provide same response if we leverage its knowledge by asking it from different directions.
 Again, all we can do is measure LLMS behavior through asking questions and analyzing answers but definitely don't know exactly how are they providing answers (Interpretability field is currently working on this part but its in its infantry state right now ()).
 
