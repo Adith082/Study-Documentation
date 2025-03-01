@@ -88,14 +88,76 @@ LLMS app store?
 you can customize your own gpt if you want.
 you can upload files which gpt would use Retrieval augmented generation (RAG) to use those files as reference and provide you response! much like when gpt's browse through different websites and provide response and reference of resources.
 
-LLM's are no longer just next word predictors, they are much more than that, you can call them as an emerging Operating System that would does various tasks or might do in a few years.
+LLM's are no longer just next word predictors, they are much more than that, you can call them as an emerging Operating System that would do various tasks or might do in a few years.
 
-- 
+- it can self-improve in a specific domain which offers reward function.
 
-- 
+- it can think for a long time using system 2.
+
+- it can leverage different tools(web browser, python library, mouse/keyboard) to provide response.
+
+- it can see and generate images and video.
+
+- can be customized and finetuned for specific tasks
+
+- can communicate with other LLMS
+
+
+LLMS can be thought of as OS !
+for example Ram can be equivalent to a context-window (from how many possible words do we have to choose for the next word prediction)
+
+llama series <--> Linux (open source perspective)
+
+OPEN_AI, Gemini <--> windows, macOs
 
 
 
+LLM security
+------------
+
+Jail Breaks:
+------------
+it means to prompt llms in such a way that exposes, penetrates, breaks safety measures of llms. 
+
+example: imagine, you query "give me a step by step process to destroy humanity"
+llm would maintain safety procedures while answering this question.
+but if you provide the same query but in a different format let's say base64 format, then it might 
+give you the desired answer! thus breaking safety rules. what that would mean is, when model was
+trained for avoiding unsafe queries, it was trained on English and not on base64. but while pretraining
+the model gets the idea of  base64 <---> English look like. interesting isn't it?
+
+
+Prompt Injections
+---------------------
+imagine you give an llm an image which is filled with nothing but color and ask to explain that image.
+instead of explaining the image, llm would provide a response nothing related to that image. for example: "10% sell on amazon!"
+now what was that all about! well actually within that while color image there is a hidden text telling the llm to give this response
+no matter what user say! llm would pick this hidden text but the user has no idea about it.
+
+
+Data Poisoning / Back-door attacks
+----------------------------------
+Sleeper agent attack
+----------------------
+when an llm is trained on data, it might train on some portion that is poisoned which would result in llm to provide nonsensical output for a specific key word let's say "james bond"
+usually this problem has not occurred in pretraining yet. But related to finetuning, we see this issue arise.
+
+...
+....
+..
+adversarial inputs,
+
+watermarking and evasion
+,
+
+data reconstruction,
+
+insecure output handling,
+
+Denial of service
+
+and many more.
+and the list goes on and on
 
 
 
