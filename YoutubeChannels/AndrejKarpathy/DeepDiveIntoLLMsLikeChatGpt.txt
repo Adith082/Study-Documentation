@@ -13,4 +13,5 @@ there are several steps to build llms like gpt
              to give an idea of what it looks like, hugging face has a dataset called "fine-web" that is 44-Terabyte in size.
              Common Crawl CC(non-profit organization) can be a starting point. what they do is, take some seed websites. then index data from that websites.
              follow every links of those websites and do so on and so forth. The situation can be depicted much like a tree).
-                                         
+              
+             but as the common crawl data is very raw, how is it filtered in many different ways?
