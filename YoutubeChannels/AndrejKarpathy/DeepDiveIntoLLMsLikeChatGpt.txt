@@ -1,0 +1,16 @@
+2k25
+
+we are going to dive deep (also considering general audiences) into llms like chat gpt
+
+there are several steps to build llms like gpt
+
+1. pretraining
+   ------------
+          pretraining is composed of some steps too.
+          
+          gathering data from the internet.
+          ---------------------------------
+             to give an idea of what it looks like, hugging face has a dataset called "fine-web" that is 44-Terabyte in size.
+             Common Crawl CC(non-profit organization) can be a starting point. what they do is, take some seed websites. then index data from that websites.
+             follow every links of those websites and do so on and so forth. The situation can be depicted much like a tree).
+                                         
