@@ -15,3 +15,14 @@ there are several steps to build llms like gpt
              follow every links of those websites and do so on and so forth. The situation can be depicted much like a tree).
               
              but as the common crawl data is very raw, how is it filtered in many different ways?
+
+           URL filtering --> (removing websites that are harmful or malicious, advertisement, adult content etc. )
+           text extraction --> take raw data, meaning raw html and extract only texts (for example, a website having a navbar and a paragraph below. crawlers would only be interested in paragraph text)
+           language --> different companies set different criteria (example take webpages where we get atleast 65% english)
+           ---
+           ---
+            ---
+           PII (personal identification information) ---> try to extract webpages which include private information such as (social security number etc.)
+
+
+           
