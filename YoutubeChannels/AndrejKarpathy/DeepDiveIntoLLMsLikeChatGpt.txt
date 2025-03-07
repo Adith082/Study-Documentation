@@ -25,4 +25,30 @@ there are several steps to build llms like gpt
            PII (personal identification information) ---> try to extract webpages which include private information such as (social security number etc.)
 
 
+
+         tokenization:
+          the process of converting a sequence of words to symbols (tokens or numbers)
+             "I want Spiderman! I want Dr Doom" 
+          imagine the above text as a huge sequence of text coming from internet. you see, computer's understand them as a sequence of 0, 1 bit wise way
+          if we use an encoding called 'utf8' to that text inside "", lets imagine we get something like below
+                           01011101 01010101 0101011 00011111 00010111 00111111
+          length of that text sequence is a very important parameter for neural networks. what we want is to trade off between this sequence length and the symbol's that represent that sequence.
+           so far, we have 2 symbols for "I want Spiderman!" but as I want to trade off, my target would be to compress that 0,1 sequence length and increase the number of symbols.
+              for this, we can form an 8bit group of 256 possible symbols (aka numbers)
+             Now that sequence might look like 
+
+                 12 3 45 4 12 3 56 32
+
+            but big llms go even further. they leverage byte-pair algorithm to shrink sequence even more.
+            In byte-pair algorithm, we notice  consecutive symbols occurance and merge them and provide them a new symbol lets give it 256
+
+                 256 45 4 256 56 32
+
+             (Note: gpt 4 has 100,277 symbols but here we are providing examples with only 256 symbols)
+
+           so how does gpt4 converts text to tokens and then from tokens to text?
+
+
+
+             
            
