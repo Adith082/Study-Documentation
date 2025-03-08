@@ -40,13 +40,32 @@ there are several steps to build llms like gpt
                  12 3 45 4 12 3 56 32
 
             but big llms go even further. they leverage byte-pair algorithm to shrink sequence even more.
-            In byte-pair algorithm, we notice  consecutive symbols occurance and merge them and provide them a new symbol lets give it 256
+            In byte-pair algorithm, we notice  consecutive symbols occurrence and merge them and provide them a new symbol lets give it 256
 
                  256 45 4 256 56 32
 
              (Note: gpt 4 has 100,277 symbols but here we are providing examples with only 256 symbols)
 
            so how does gpt4 converts text to tokens and then from tokens to text?
+
+            (Note: there is a website known as Tiktonizer where you can get a hands on experience about text->tokenizer conversion)
+               in Tiktokenizer, you will find that the tokenizer for gpt4 base is known as cl100k base that contains 100,277 possible symbols.
+            
+
+        Neural networks are nothing but a big mathematical expression with huge parameters( aka weights) and each token of each context window( let's take size 4. example from above would be 256, 45, 4, 256). training this neural networks with those sequence of tokens (context window lets say 256, 45, 4, 256 --> will predict its next which is 56) after each iteration weights get aligned to a point where it will successfully predict the next token.
+
+
+
+model inference:
+-------------------
+after training part, it's time to talk to the model!
+you query a set of text and then model generates text for you.
+but what happens underneath?
+
+when you query, you give the model a sequence of tokens which goes to Neural network that would have to pick a token out off 100,277 tokens(gpt 4) using probability
+distributions. then that new token generated or inferenced by model is again moved as input to neural network to provide the next token and so on and so forth.
+
+
 
 
 
