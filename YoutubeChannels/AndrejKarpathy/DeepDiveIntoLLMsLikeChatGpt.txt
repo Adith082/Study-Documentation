@@ -66,6 +66,14 @@ when you query, you give the model a sequence of tokens which goes to Neural net
 distributions. then that new token generated or inferenced by model is again moved as input to neural network to provide the next token and so on and so forth.
 
 
+Gpt-2 by openAI can be good head-start for understanding how modern gpt's work. why?
+because what really differs from gpt-2 than current SOTA (state of the art's) is that the architecture is probably same as before.
+what increased is in the size of parameters, tokens, context-windows.
+
+so why not make a gpt2 by yourself? then you would get the basic understanding for modern llms workflow!
+
+
+
 
 
 
