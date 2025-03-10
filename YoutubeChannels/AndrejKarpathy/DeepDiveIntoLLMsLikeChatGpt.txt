@@ -66,7 +66,7 @@ when you query, you give the model a sequence of tokens which goes to Neural net
 distributions. then that new token generated or inferenced by model is again moved as input to neural network to provide the next token and so on and so forth.
 
 
-Gpt-2 by openAI can be good head-start for understanding how modern gpt's work. why?
+Gpt(generative pre-trained-transformers) -2 by openAI can be good head-start for understanding how modern gpt's work. why?
 because what really differs from gpt-2 than current SOTA (state of the art's) is that the architecture is probably same as before.
 what increased is in the size of parameters, tokens, context-windows.
 
@@ -74,8 +74,19 @@ so why not make a gpt2 by yourself? then you would get the basic understanding f
 
 
 
+(model trained by utilizing "Lambda" a company that provides cloud GPU service to the users)
+GPU's are perfect fit for training models. but why?
+because the deal with expensive computations in a parallel way that would give us faster better output.
+example of gpu would be NVIDIA H100  ---> several of these combined can be a node ---> several of node can be combined as a system ---> several of system can be a whole data center system.
+
+
+"base models" are actually not the question answer type system llms that we see over the internet. All base models can do is just constantly predict next token and give you outputs.
+you can call it as one of the very first steps to building large llms like chatGpt, deepseek-R1.
 
 
 
-             
-           
+
+
+
+
+
