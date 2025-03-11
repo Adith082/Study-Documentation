@@ -84,6 +84,50 @@ example of gpu would be NVIDIA H100  ---> several of these combined can be a nod
 you can call it as one of the very first steps to building large llms like chatGpt, deepseek-R1.
 
 
+what is regurgitation?
+in a base model lets say llama-3, if model provides output exactly the same as it was trained on from a particular webpage.
+in short, complete memorization output. not even a slight change.
+the reason for regurgitation is when model has seen (epochs) that text many times while training.
+
+what is hallucination?
+complete reverse of regurgitation. here model takes its best guess to provide probabilistic output which is completely not legit.
+
+grabing in-context learning ability of llama-3base using few-shot prompt!
+imagine you query that base model a pattern of word translation from English to banglish like below
+"I:ami, you:tumi, he:"
+the model might give the below output
+"tini, work:"
+here llama-3 is learning the pattern from query that its a series of word translation!
+
+
+how do you create an AI assistant if you only have the base model?
+by making an effective prompt! create a series of dialog conversations like below
+human: what is a basket?
+assistant: it is an object
+---
+---
+--
+human: why the sky is blue?
+
+now llama3-base would provide an answer just like below
+assistant: --------------  (let '---' be some random text)
+
+human: ----  (let '---' be some random text)
+
+etc.
+but it will also go on and continue the conversation from human perspective which is not exactly what we want but still, it can be some sort of an AI-assistant isn't it?
+
+
+so base model is an internet document simulator on a token level. it can generate token sequences that have the same statistics as internet documents.
+
+but we need to improve from here as we want actual AI assistant. so now, we move to POST-TRAINING stage.
+
+2. Post-Training
+-----------------
+
+
+
+
 
 
 
