@@ -124,6 +124,17 @@ but we need to improve from here as we want actual AI assistant. so now, we move
 
 2. Post-Training
 -----------------
+here we turn the base model to an assistant model!
+how?
+by training the previous base model with a new dataset.
+That new dataset is like a conversation between (let's say) an assistant and a human.
+computation cost in this phase is much less than pre-training phase (as dataset won't be that big)
+
+but how do we represent this new dataset? how do we make the base model see this new dataset? and how do we create this new dataset?
+
+
+
+
 
 
 
