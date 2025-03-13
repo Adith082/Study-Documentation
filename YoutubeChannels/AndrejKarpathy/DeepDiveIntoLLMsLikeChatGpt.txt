@@ -132,7 +132,35 @@ computation cost in this phase is much less than pre-training phase (as dataset 
 
 but how do we represent this new dataset? how do we make the base model see this new dataset? and how do we create this new dataset?
 
+how do we convert conversations into token space?
+see tiktokenizer example (from hugging-face)
+basically it follows a set of rules (much like when sending messages using TCP/IP where we universally agree a set of rules on how to send data)
 
+
+we give conversations a new format.
+for example:
+instead of training on raw tokens of "what is 2+2?" we train it on raw tokens of "<|im_start|> user <|im_sep|> what is 2+2? <|im_end|>"
+   
+similarly,
+  "<|im_start|> user <|im_sep|> what is 2+2? <|im_end|>
+  
+  <|im_start|> assistant <|im_sep|> it's 4! like 2*2! <|im_end|>"
+
+see, we added additional rules(additional new tokens) to make model understand while predicting next token(training)
+
+different llms might have different format of making models understand conversation.
+
+so, we are basically finetuning base-llms with conversation data! 
+
+now, when you move to chatgpt, and ask the question "what is 2+2?"
+in server, that question will be converted to the  
+
+   ("<|im_start|> user <|im_sep|> what is 2+2? <|im_end|>
+   <|im_start|> assistant <|im_sep|>")
+ texts token and will be asked the model to provide an output and from that output we show the user every token other than
+"<|im_end|>"
+   "<|im_start|> user <|im_sep|> what is 2+2? <|im_end|>
+   <|im_start|> assistant <|im_sep|>"
 
 
 
