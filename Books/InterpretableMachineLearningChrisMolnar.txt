@@ -1,1 +1,4 @@
 The best performing models are often blends of several models (also called ensembles) that cannot be interpreted, even if each single model could be interpreted. If you focus only on performance, you will automatically get more and more opaque models. The winning models on machine learning competitions are often ensembles of models or very complex models such as boosted trees(gradient) or deep neural networks.
+
+
+ The interpretability of the features is a big assumption. But if it is hard to understand the input features, it is even harder to understand what the model does

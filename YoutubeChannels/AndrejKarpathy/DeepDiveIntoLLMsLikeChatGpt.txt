@@ -163,11 +163,18 @@ in server, that question will be converted to the
    <|im_start|> assistant <|im_sep|>"
 
 
+how are these conversation data created?
+by expert human labelers, combination of llms and expert human labelers (example: ultra chat)
+
+imagine you query something on chatgpt and get some output.
+if that question is the same as post-training data, the model would very likely provide the output of that exact(slight change maybe) postraining data 
+
+if that question is not the same as post-training data, the model would gather knowledge from pretraining data and combine it with post-training conversation data (to get the idea of an assistant) and then provide its emerging output!.
 
 
 
-
-
+LLM Psychology
+---------------
 
 
 
