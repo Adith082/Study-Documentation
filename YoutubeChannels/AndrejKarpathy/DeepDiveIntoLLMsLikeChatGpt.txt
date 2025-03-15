@@ -175,6 +175,75 @@ if that question is not the same as post-training data, the model would gather k
 
 LLM Psychology
 ---------------
+what is hallucination?
+when llms confidently generate texts that are not legit at all.
+
+how do they generate these hallucination?
+"who is john cena?"
+let's imagine from the above query, you get the following answer:
+"the goat of wwe".
+now the response here is legit.
+
+let's imagine, another query
+who is zack ryder? (also imagine there was no "zack ryder" name mentioned in training data of this particular llm)
+
+and you get the answer "legend of wwe" 
+
+response of the second query is false. but still, the llm provided the answer confidently!. this phenomenon is known as hallucination.
+even though the model does not have any knowledge about "zack ryder" it imitated patterns of the question "who is -----?" and provided its random guess.
+Basically, the power of imitating surpasses its uncertainity invocation.
+
+
+how do we mitigate hallucination?
+meta released a paper for llama-3 where they mitigated this phenomenon by
+-> querying the same question 3(to5) times to analyze whether the answer differs or not.
+   for example:
+    who is zack ryder?
+   -> overrated superstar of wwe.
+   who is zack ryder?
+   -> underrated superstar of wwe
+   who is zack ryder>
+   -> hero of wwe
+
+-> if the answer differs, then we finetune the model with similar to the following conversation
+who is zack ryder?
+-> "I don't have any knowledge regarding the question"
+
+
+but there are more advanced ways of dealing with hallucinations too!
+
+by using tools! (web search)
+if the model is uncertain about a queries answer, it will have the ability to search on website get the text and add it with the given query, ultimately
+feeding this context window (aka working memory) to get an answer from the model that provides reference of website links.
+
+instead of finetuning models with unknown questions answer as "I don't know", we leverage special token designed to query on web to get text from the internet.
+during the inference part, if model sensed that it encountered uncertainitiy, it searches that query on web. During this time, it pauses token generation until it gets
+information from web and appends it with the actual query (together working as this context window that gets to feed into the neural network) and provides final answer
+with reference (probably utilized by RAG).
+
+
+how do we make the models give authentic information about themselves?
+2 ways. 
+-> one way would be to create hard coded conversations and finetune them.
+-> other way would be to attach hidden system message that is added before any query user provides. Here, system message would contain models information
+
+models need tokens to think!
+-------------------------------
+
+for enhancing commputational capabilities in LLMS,  the best decision would be to conclude response of query with final answer rather than commencing with final answer.
+for example,
+you ask llm to give answer of the following equation,
+x^2 - 5x + 1 = 0 
+
+it will be a risky situation if model is trained to provide computational answers at the very beginning without going through step by step process.
+why?
+because neural network has fix number of layers that commit limited operations. if we train computational conversations like the above, then answer token will have to go through
+a tough period calculating as it does not have reliability of previous steps.
+
+that's why, we should finetune computational conversations using (divide and conquere) approach, which is to follow step by step proceedure and finally come to conclusion with final answer. but recommended way would be to ask llms to use tool to code the computation part.
+
+
+
 
 
 
