@@ -122,7 +122,7 @@ so base model is an internet document simulator on a token level. it can generat
 
 but we need to improve from here as we want actual AI assistant. so now, we move to POST-TRAINING stage.
 
-2. Post-Training
+2. Post-Training   -> here outcome would be an SFT(supervised fine-tuning) model
 -----------------
 here we turn the base model to an assistant model!
 how?
@@ -230,7 +230,7 @@ how do we make the models give authentic information about themselves?
 models need tokens to think!
 -------------------------------
 
-for enhancing commputational capabilities in LLMS,  the best decision would be to conclude response of query with final answer rather than commencing with final answer.
+for enhancing computational capabilities in LLMS,  the best decision would be to conclude response of query with final answer rather than commencing with final answer.
 for example,
 you ask llm to give answer of the following equation,
 x^2 - 5x + 1 = 0 
@@ -240,7 +240,60 @@ why?
 because neural network has fix number of layers that commit limited operations. if we train computational conversations like the above, then answer token will have to go through
 a tough period calculating as it does not have reliability of previous steps.
 
-that's why, we should finetune computational conversations using (divide and conquere) approach, which is to follow step by step proceedure and finally come to conclusion with final answer. but recommended way would be to ask llms to use tool to code the computation part.
+that's why, we should finetune computational conversations using (divide and conquere) approach, which is to follow step by step proceedure and finally come to conclusion with final answer. but recommended way would be to ask llms to use tool(python interpreter) to code the computation part where llms will generate code compiler would compile the code
+and provide answer.
+
+cognitive deficit of models
+-> not good at counting (try to make models utilize tools to get better at it)
+-> not good at finding characters from a word or sentence. the reason is that models see tokens (as words). they don't see characters. so if we make a character level tokenization, we might solve this issue but it would be a long sequence and might raise further issue (or not, well I'm not sure).
+
+jagged intelligence
+-------------------
+why is it that a model, able to solve Olympiad level problems, not able to correctly answer the question "which is bigger 9.11 or 9.9?"
+it's still a big question. Although one research explained that they were navigating layers and activation functions and found that the above question conflicts with bible page number!
+as in bible 9.9 after 9.11 but the above questions actual answer is that 9.11 is bigger than 9.9.
+
+ 
+
+3. Reinforcement Learning (last major stage of training)
+--------------------------------------------------------
+--------------------------------------------------------
+
+big AI companies did not talk publicly about reinforcement-learning-finetuning. then suddenly deepseek-R1 pops and shattered the internet. more about deepseek-r1 later.
+
+
+the concept is probably still early in its development process.
+
+
+In the context of LLMS,
+
+step1-> sample the best possible correct answer out of several possible correct answers of a query 
+(you run that same query several times to get several answers and sample best answer to train it again with that query).
+
+step2-> train model with that answer for that query
+
+step3-> goto step1
+
+
+by doing this model will provide the best tokens to get the final answer. it will do it in such a way that is so much favourable to the model itself.
+
+
+
+pre-training, post-training and reinforcement-learning-finetuning all together can be described simply if you analyze how 
+we complete a particular course subject book (let's say chemistry).
+for each chapter this book generally contains,
+background knowledge (related to pretraining) (how? when you read them you basically train yourself with that knowledge much like models),
+questions and answer from experts (related to post-training) (how? when you review the answers from experts, you basically understand how to write answers in a proper format),
+and finally excercise questions (related to reinforcement-learning-finetuning) (how? when you practice by yourself you come up with different solutions that lead to correct and incorrect answers but you pick correct ones and anaylze which solution would be best for you to deliver in exams! and maybe in some extent your solution might get liked by the one who evaluates
+your solution!
+)
+
+
+
+
+
+
+
 
 
 
