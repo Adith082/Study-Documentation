@@ -251,7 +251,7 @@ jagged intelligence
 -------------------
 why is it that a model, able to solve Olympiad level problems, not able to correctly answer the question "which is bigger 9.11 or 9.9?"
 it's still a big question. Although one research explained that they were navigating layers and activation functions and found that the above question conflicts with bible page number!
-as in bible 9.9 after 9.11 but the above questions actual answer is that 9.11 is bigger than 9.9.
+as in bible 9.11 after 9.9 but the above questions actual answer is that 9.9 is bigger than 9.11.
 
  
 
@@ -288,17 +288,37 @@ and finally excercise questions (related to reinforcement-learning-finetuning) (
 your solution!
 )
 
+Reinforcement Learning from Humanfeedback (RLHF) (we use this technique for unverifiable domain. meaning when we don't have an exact answer like computational queries ex:math problems))
+when we do Reinforcement learning for like for example filtering best jokes or poems. (RLHF is not exactly like RL)
+
+RLHF
+what are the pros?
+
+what are the cons?
+-> adversarial examples?
 
 
 
+llms are swiss cheese! why? some times llms do dumb things like not able to compare between 9.11 and 9.9 even though they can solve oplympiad questions!
 
 
+future capabilities
+---------------------
+multimodality:
+tasks -> agents (long, coherent, error correcting contexts)
+pervasive, invisible
+computer-using
+test-time training? etc.
 
 
+references to keep track of them
+---------------------------------
+lmarena.com (don't trust leaderboard fully)
+buttondown.com
+twitter
 
 
-
-
+open question: does verifiable domain emerging thinking in RL transfer to unveriable domain thinking?
 
 
 
