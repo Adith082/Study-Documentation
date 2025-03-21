@@ -1,0 +1,6 @@
+autograd is an automatic gradient engine which implements backpropagation. it is a library created by Andrej karpathy.
+
+backpropagation is an algorithm that efficientlt calculates gradient of some kind of a loss function with respect to weights of a neural network. it would allow
+us to tune the weights of neural network which would minimize the loss function and therefore increase the accuracy of the neural network.
+
+backpropagation lies at the heart of pytorch and other modern deep neural network library.
