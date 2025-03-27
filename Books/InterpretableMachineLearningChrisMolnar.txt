@@ -2,3 +2,14 @@ The best performing models are often blends of several models (also called ensem
 
 
  The interpretability of the features is a big assumption. But if it is hard to understand the input features, it is even harder to understand what the model does
+
+
+explainability = interpretability + additional context
+
+
+it is default for a machine learning model to pick up bias from training data. but thankfully, 
+interpretability can be a great tool to detect biasness of a model.
+
+(proxy feature is gameable) vs (causal feature that are not gameable)
+
+google flu outbreak prediction. 

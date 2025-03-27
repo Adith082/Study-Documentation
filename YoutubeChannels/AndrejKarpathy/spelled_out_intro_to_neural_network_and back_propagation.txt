@@ -4,3 +4,28 @@ backpropagation is an algorithm that efficientlt calculates gradient of some kin
 us to tune the weights of neural network which would minimize the loss function and therefore increase the accuracy of the neural network.
 
 backpropagation lies at the heart of pytorch and other modern deep neural network library.
+
+
+micrograd library made by Andrej karpathy is a tool that we can use to define an expression with certain parameters and get some output.
+In behind the scene, micrograd actually does backpropagation!. we can find the gradient or partial differentiation of output with respect to any expression parameter!
+
+basically, you can train a neural network with this! you might wonder what about using tensors of pytorch. tensors just provide parallelism while performing computation and that's
+the difference. nothing else. the reason we use tensors is for faster calculation . so, using micrograd would be a huge head-start for understanding fundamentals before heading
+to utilizing tensors of py-torch.
+
+
+micro-grad contains two files. engine.py and nn.py.
+
+engine.py is the file required by nn.py to perform its operation
+nn.py contains a function called neuron, layer and mlp (multilayer perceptron)
+
+-> neural network is pretty massive mathematical expressions.
+thats why, we need datastructures in order to maintain it. for that we create a class called Value in jupyter notebook.
+
+
+during Neural Network training, you would be very interesting in finding the derivative(partial) of final output with respect to each and every weights (not data because data is always fixed)
+
+crux of backpropagation: chain rule.
+chainrule intuitive explanation: if a car moves 4 times fast than a bicycle and a bicycle moves 8 times faster than a person, then a car would move (4*8) = 32 times faster than a person!
+
+backpropagation is a recursive application of chainrule which goes backwords through the computation graph from final output.
