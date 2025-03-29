@@ -26,6 +26,28 @@ thats why, we need datastructures in order to maintain it. for that we create a 
 during Neural Network training, you would be very interesting in finding the derivative(partial) of final output with respect to each and every weights (not data because data is always fixed)
 
 crux of backpropagation: chain rule.
-chainrule intuitive explanation: if a car moves 4 times fast than a bicycle and a bicycle moves 8 times faster than a person, then a car would move (4*8) = 32 times faster than a person!
+chain rule intuitive explanation: if a car moves 4 times fast than a bicycle and a bicycle moves 8 times faster than a person, then a car would move (4*8) = 32 times faster than a person!
 
 backpropagation is a recursive application of chainrule which goes backwords through the computation graph from final output.
+
+gradient(partial derivative) gives us the power to control the final outcome
+
+
+
+Now we will look at backpropagation through a neuron.
+
+each neuron has some input (x1, x2, .... xn) and for each inputs, we have weights or synopsis (w1, w2 .... wn)
+inside each neuron
+  we calculate (sum of (xi * wi) for all n input) + b) where b is called bias which is another value that has control over sum of (xi*wi) depending on what value is set on that 'b'.
+
+finally, all of these go through a function called activation function that actually represents its input into a specific range. for example tanh (in range -1 to 1), sigmoid etc.
+
+
+imagine n1 node + n2 node ---> n3 node 
+in the above case, n3 nodes gradient value will be distributed as an equal value to node n1 and node n2
+meaning n1 grad = n3 grad and n2 grad = n3 grad
+
+addition operation equally distributes the gradients!
+
+
+
