@@ -1,0 +1,6 @@
+#1 
+create large language model combining different distinct language (Arabic, English, Bangla) with possibly same amount of data frequency
+and somehow judge them to calculate which language is mostly adapted by the llm
+
+#2
+Ensemble methods explanation?

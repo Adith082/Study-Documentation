@@ -13,3 +13,35 @@ interpretability can be a great tool to detect biasness of a model.
 (proxy feature is gameable) vs (causal feature that are not gameable)
 
 google flu outbreak prediction. 
+
+
+We tend to think in counterfactual cases
+
+
+Humans don’t want a complete explanation for a prediction, {counterfactual explanations}
+but want to compare what the differences were to another instance’s prediction (can be an artificial one)
+
+ We are used to selecting one or two causes from a variety of possible causes as THE explanation. As proof, turn on the TV news
+
+
+Pay attention to the social environment of your machine learning application and the target audience. Getting the social part of the machine learning model right depends entirely on your specific application. Find experts from the humanities (e.g., psychologists and sociologists) to help you.
+
+If one of the input features for a prediction was abnormal in any sense (like a rare category of a categorical feature) and the feature influenced the prediction, it should be included in an explanation, even if other ‘normal’ features have the same influence on the prediction as the abnormal one
+
+Good explanations prove to be true in reality (i.e., in other situations). But disturbingly, this is not the most important factor for a “good” explanation. For example, selectiveness seems to be more important than truthfulness. The explanation should predict the event as truthfully as possible, which in machine learning is sometimes called fidelity. So if we say that a second balcony increases the price of a house, then that also should apply to other houses (or at least to similar houses). For humans, fidelity of an explanation is not as important as its selectivity, its contrast, and its social aspect.
+
+
+Humans tend to ignore information that is inconsistent with their prior beliefs. This effect is called confirmation bias.
+People will tend to devalue or ignore explanations that do not agree with their beliefs. Good explanations are consistent with prior beliefs. This is difficult to integrate into machine learning and would probably drastically compromise predictive performance. Our prior belief for the effect of house size on predicted price is that the larger the house, the higher the price. Let’s assume that a model also shows a negative effect of house size on the predicted price for a few houses. The model has learned this because it improves predictive performance (due to some complex interactions), but this behavior strongly contradicts our prior beliefs. You can enforce monotonicity constraints (a feature can only affect the prediction in one direction) or use something like a linear model that has this property.
+
+
+Abnormal causes are by definition rare in the given scenario. In the absence of an abnormal event, a general explanation is considered a good explanation. Generality can easily be measured by the feature’s support, which is the number of instances to which the explanation applies divided by the total number of instances.
+
+Goals of interpretability
+--------------------------
+-> improving model
+-> justifying model and prediction
+-> discovering insights
+
+
+note: models that have learned to take “shortcuts,” like relying on non-causal features to make predictions. The tricky thing about these shortcuts is that they often don’t decrease model performance – they might actually increase it. Like relying on snow in the background to classify whether a picture shows a wolf or a dog

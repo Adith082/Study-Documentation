@@ -51,3 +51,4 @@ addition operation equally distributes the gradients!
 
 
 
+we use topological sort and reverse that node list fo find the exact order to backpropagate nodes from final output to inputs.
