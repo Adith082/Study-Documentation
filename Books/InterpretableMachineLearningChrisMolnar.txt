@@ -45,3 +45,53 @@ Goals of interpretability
 
 
 note: models that have learned to take “shortcuts,” like relying on non-causal features to make predictions. The tricky thing about these shortcuts is that they often don’t decrease model performance – they might actually increase it. Like relying on snow in the background to classify whether a picture shows a wolf or a dog
+
+
+Methods overview
+----------------
+------------------
+
+
+Inherently interpretable models:
+
+linear regression, logistic regression, decision tree, linear model extensions, rule fit, decision rules
+
+here rule fit means to Combine tree-based rules with Lasso regression to learn sparse rule-based models
+
+what is lasso regression?
+
+
+other interpretable-by-design approaches:
+-> Prototype-based neural networks for image classification, called ProtoViT
+-> Yang et al. (2024) proposed inherently interpretable tree ensembles which are boosted trees (e.g., with XGBoost) with adjusted hyperparameters
+-> Model-based boosting is an additive modeling framework. The trained model is a weighted sum of linear effects, splines, tree stumps, and other so-called weak learners (Bühlmann and Hothorn 2007).
+-> Generalized additive models with automatic interaction detection (Caruana et al. 2015).
+
+
+
+Scope of interpretability
+--------------------------
+
+->The model is entirely interpretable: like small decision trees
+
+->Parts of the model are interpretable: linear regression with hundreds of features
+
+->The model predictions are interpretable: using KNN for images, showing K most similar images for models particular prediction. Or for decision trees, a prediction is explained by returning the decision list that led to the prediction.
+
+Note: When exploring a new interpretability approach, assess the scope of interpretability. Ask at which levels (entirely interpretable, partially interpretable, or interpretable predictions) the approach operates.
+
+# Many data-driven fields already have established (interpretable) modeling approaches, such as logistic regression in medical research.
+
+# there are often multiple models with similar performance but different interpretations, which makes our job more difficult. This is called the Rashomon effect.
+
+# extracting data insights vs extracting model insights.
+
+ there are often multiple models with similar performance but different interpretations, which makes our job more difficult. This is called the Rashomon effect. The problem with this model multiplicity is that it makes it very unclear which model to interpret.
+
+
+
+
+
+
+
+

@@ -1,5 +1,0 @@
-#Compared 
-to global interpretability methods, developing explanations 
-for black-box model local behavior is easier. However, this 
-might not be always true. It is dependent on the black-box 
-model.
