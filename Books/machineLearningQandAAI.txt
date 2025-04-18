@@ -1,0 +1,1 @@
+-> purpose of self supervised learning is to have meaningful representation by leveraging unlabeled data

@@ -9,3 +9,6 @@ https://arxiv.org/pdf/1602.04938
 https://arxiv.org/pdf/1905.04610
 
 https://link.springer.com/article/10.1007/s10618-023-00933-9
+
+
+https://github.com/Dakingrai/awesome-mechanistic-interpretability-lm-papers

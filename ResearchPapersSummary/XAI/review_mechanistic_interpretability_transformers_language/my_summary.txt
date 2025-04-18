@@ -1,0 +1,5 @@
+a task centric roadmap for beginners who want to brush up this interpretability technique called mechanistic interpretability.
+
+what is mechanistic interpretability?
+a technique that attemps to revers-engineer computations into human-understandable mechanisms.
+(like giving insignts about attention heads and neurons!)
