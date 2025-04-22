@@ -1,1 +1,5 @@
 -> purpose of self supervised learning is to have meaningful representation by leveraging unlabeled data
+
+
+
+-> lottery ticket hypothesis -> a large nn can have subnetworks that perform exactly same (some times even better) than original large nn!

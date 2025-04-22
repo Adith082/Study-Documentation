@@ -3,3 +3,28 @@ a task centric roadmap for beginners who want to brush up this interpretability 
 what is mechanistic interpretability?
 a technique that attemps to revers-engineer computations into human-understandable mechanisms.
 (like giving insignts about attention heads and neurons!)
+it's like how humans reverse engineer binaries into understandable language (code).
+
+Mechanistic Interpretability (3 fundamental objects of study)
+
+-> features
+
+-> circuits
+
+-> Universality
+
+features
+---------
+you give llm an input called "dog"
+
+then llm might extract animal, pet, has4legs etc.
+using MI you can figure from dog to what features llm could extract like the ones above.
+
+circuits
+----------
+how do you think the "features" are cracked by LLMs from given input "dog"? ciruites find them out.
+circuits– meaningful computational pathways that connect features and facilitate specific LM behaviors(like reasoning)
+
+More formally, if we view an LM M as a computational graph with features as nodes and the weighted
+ connections between them as edges, a circuit is a sub-graph of M responsible for implementing specific
+ LM behaviors
