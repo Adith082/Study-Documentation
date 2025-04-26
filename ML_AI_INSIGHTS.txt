@@ -1,0 +1,11 @@
+-> Transformers excel under end-to-end fine-tuning while convolutional networks excel under linear probing (where only the model head is trained). This is an interesting point that should be explored. here, head means (fully connected layers + class labels (probably)) (source medium blog of salvator raieli)
+
+-> 
+Swin Transformer v2 (base-sized model)   (best backbone for classification tasks)  (source medium blog of salvator raieli)
+
+
+-> ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders (best for other than classification tasks. although in classification
+task. it is very close to Swin Transformer v2 (base-sized model) 
+) (source medium blog of salvator raieli)
+
+-> Self-supervised (SSL) backbones can outperform supervised pretraining with similar-sized pre-training datasets. This is good news because creating a supervised dataset is more expensive.  (source medium blog of salvator raieli)
