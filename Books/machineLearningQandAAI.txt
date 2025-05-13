@@ -3,3 +3,8 @@
 
 
 -> lottery ticket hypothesis -> a large nn can have subnetworks that perform exactly same (some times even better) than original large nn!
+
+
+
+-> knowledge distillation (for reducing overfitting)
+             kullback leibler divergence

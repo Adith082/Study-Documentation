@@ -3,3 +3,11 @@ Api gateways?
 what is Circuit breakers?
 
 how to perform CQRS with spring boot? 
+
+
+servlet (java web framework probably) used web.xml which has several issues. Spring then solved those issues.
+Spring framework came to solve some serious issues of servlet.
+
+radiography
+
+mammography (radiography for breast) It is used to routinely evaluate asymptomatic women for breast cancer
