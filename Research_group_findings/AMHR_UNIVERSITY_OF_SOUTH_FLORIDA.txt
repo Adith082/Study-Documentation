@@ -1,0 +1,5 @@
+-> NLI (natural language inference). NLI and how it relates to paraphrasing and misinformation.
+
+-> Psycholinguistics (intersecting physcholinguistics) with NLP
+
+-> can this kind of formalization be performed automatically, or with the help of artificially intelligent software? We have reason to believe that the answer is 'yes', and are working towards that goal. (active formalization)
