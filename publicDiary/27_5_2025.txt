@@ -1,0 +1,8 @@
+learned about,
+
+-> consistency models vs diffusion models
+
+-> an epic evening like never before inside hatirjheel, Dhaka Bangladesh. took some unprecedented (probably)  snapshots of nature.
+
+-> embeddings can be generated each words, sentences and paragraphs as well. for Retrieval augmented generation, sentence and paragraph embeddings are popular choices.
+for LLMs like gpt, word embeddings are used.

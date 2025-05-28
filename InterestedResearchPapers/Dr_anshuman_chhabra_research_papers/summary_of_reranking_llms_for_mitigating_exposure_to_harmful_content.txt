@@ -1,0 +1,9 @@
+LLM reranking approach to mitigate harmful content in social media
+
+
+baslines
+--------
+
+perspective api
+
+mistral better than llama2? even though mistral has 7 billion parameters and llama2 has 13billion paramters. maybe something in architecrual differences?

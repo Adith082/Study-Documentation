@@ -1,0 +1,5 @@
+maven (only give it what to do. it will take care of how to do)  uses project object model. requires pom.xml 
+
+ant (have to give what to do and how to do)
+
+-> maven and gradle have different project structures that they support!
