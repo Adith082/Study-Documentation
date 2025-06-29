@@ -9,3 +9,6 @@ task. it is very close to Swin Transformer v2 (base-sized model)
 ) (source medium blog of salvator raieli)
 
 -> Self-supervised (SSL) backbones can outperform supervised pretraining with similar-sized pre-training datasets. This is good news because creating a supervised dataset is more expensive.  (source medium blog of salvator raieli)
+
+
+-> self attention mechanism is inspired from bahdanau attention mechanism!

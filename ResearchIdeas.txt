@@ -2,5 +2,14 @@
 create large language model combining different distinct language (Arabic, English, Bangla) with possibly same amount of data frequency
 and somehow judge them to calculate which language is mostly adapted by the llm
 
-#2
-Ensemble methods explanation?
+#2 Ensemble methods explanation?
+
+#3 finger print detection experiment.
+
+#4 leveraging AI/ML in space biology. (to get space biology data, go to osdr.nasa.gov/bio)
+
+#5 Bioinformatics for space crop production.
+
+#6 morsecode detection using LLM? or performance analysis. making a morse code translator
+
+#7 some disease happens so faster in space? why?
