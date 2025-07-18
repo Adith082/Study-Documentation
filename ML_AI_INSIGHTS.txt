@@ -12,3 +12,6 @@ task. it is very close to Swin Transformer v2 (base-sized model)
 
 
 -> self attention mechanism is inspired from bahdanau attention mechanism!
+
+
+-> embedding can be said as a compression version of input data (image, text) that contains important information.

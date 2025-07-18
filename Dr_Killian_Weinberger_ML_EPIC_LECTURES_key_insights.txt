@@ -1,0 +1,21 @@
+-------------> day1 supervised learning -----------------
+bag of words are a text representations where we track the frequency of each words
+
+each data sample is a vector of d dimension where d is the number of vocabulary available and for that particular sample 
+we have the record of which words  existed and how many times they existed?
+
+
+imagine my vocabulary has 5 words of the following:
+apple, can, bat, I, have (0, 1, 2, 3, 4) th element of vocabulary
+
+if my sample text is "I have have apple"
+then the vector representation of the text would look like below
+[1, 0, 0, 2, 1] each value refereeing to the frequency of the word in my sample text
+
+
+----day2-----
+
+
+
+
+

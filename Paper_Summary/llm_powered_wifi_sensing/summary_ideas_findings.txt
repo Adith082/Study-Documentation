@@ -1,0 +1,4 @@
+ -> claimed by author, CoT aka chain of thought reasoning is particularly
+ effective when paired with visual input. likely be
+cause images provide additional context that facil
+itates structured reasoning.

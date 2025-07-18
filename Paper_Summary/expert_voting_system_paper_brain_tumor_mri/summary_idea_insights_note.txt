@@ -1,0 +1,17 @@
+Histogram of oriented gradients?
+
+
+results did show that inception-V3 surpassed voting system. can we surpass it?
+
+
+widely preferred brain-tumor data is available for free at fig-share?
+
+individually, resnet-50 performed the best! and CNN-MRI performed the worst
+
+ideas:
+
+we could also experiment by converting MRI to fourier image and 
+then try to predict whats the accuracy?
+
+
+what would the CNN-MRI perform if we convert the MRI images into fourier transformed image?

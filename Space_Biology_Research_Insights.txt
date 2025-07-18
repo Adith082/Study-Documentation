@@ -1,0 +1,9 @@
+Biological data's tend to have more noise which we have to pay attention too to remove them.
+
+
+semi-supervised learning --> where you dont have much labeled data. then you train model with existing unlabeled data then train model with
+limited label data to identify large unlabeled data! in space biology research we might face these issues more in terms of data collection.
+
+
+how does microgravity situation done on earth?
+by spinning organisms in a centrifuge.
