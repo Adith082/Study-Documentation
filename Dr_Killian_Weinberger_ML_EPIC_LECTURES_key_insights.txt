@@ -17,5 +17,33 @@ then the vector representation of the text would look like below
 
 
 
+dense vs sparse vector representations
+
+in sparse representation, we have many many zeroes. we can efficiently store if we want in sparse representations as we might not care about zeroes
+
+how many ml algorithms can there be?
+-> many, could be infinite amount of ml algorithms. example of some of them are given below
+
+  -> decision trees, linear classifiers, artificial neural networks (or deep neural networks), support vector machines etc.
+
+  -> no ml algorithm is best. it all depends on particular problem, particular data which algo would be perfect.
+
+using loss functions, we can figure out which algo would be perfect for a particular data.
+
+loss functions are universally non-negative always. the more moves toward 0 the more better the algorithm fits its data
+some loss functions examples are respectively 0/1 loss, squared-loss(we use it for regression(in this type of problem the label is a Real number) problem), absolute-loss
+
+when to use squared loss and when to use absolute-loss? (hint: ridiculous outliers)
+
+most machine learning algorithms are very much capable of memorizing the training dataset!
+
+
+-> a lot of huge mistakes happened in machine learning by people just because of not being able to split train and test data the right way.
+
+
+
+if the data has temporal component, then the best thing would be to split train test based on time. past data in training, future data in testing.
+dr. wein berger made a mistake when he splitted spam emails randomly. which even though lead to test data getting 0% error. but in that way train and test data had more same data!
+because same spam emails can be sent to multiple people. so, in case of temporal data, it is a good idea to split train-test based on time, other wise split randomly.
 
 

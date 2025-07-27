@@ -14,4 +14,37 @@ task. it is very close to Swin Transformer v2 (base-sized model)
 -> self attention mechanism is inspired from bahdanau attention mechanism!
 
 
+medical imaging + AI
+--------------------
+
 -> embedding can be said as a compression version of input data (image, text) that contains important information.
+
+-> supervised contrastive learning? important stuff. do check on it please.
+
+-> there is a visualization technique called T-distributed stochastic neighbor embedding or TC. Its like visualizing embeddings in a 2 dimensional way
+
+-> AUC-ROC curve is actuallya tradeoff between true-positive and false-positive!
+
+-> just like we can combine image with image for contrastive learning, we can do the same thing for image with text! and put them in the same embedding space.
+   originally it was developed for CLIP, but then it was also applied for Chest X-rays ConVIRT, CheXero? please google CLIP, ConVIRT and CheXero 
+
+
+-> what can we build if we have just access to embeddings?
+        1. Zero-shot image classifiers.
+        2. Text-to-Image retrievals.
+        3. Report Generator.
+
+
+-> classification vs segmentation vs detection
+
+
+->  U-net is a great architecture for (semantic segmentation, not instance segmentation) segmenting biomedical image. nifty files are collection of dcom files (like 3d segmentation images)
+
+
+-> Backpropagation can be of different types such as static backpropagation and recurrent back-propagation networks
+
+
+
+
+
+

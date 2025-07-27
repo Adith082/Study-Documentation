@@ -15,3 +15,5 @@ then try to predict whats the accuracy?
 
 
 what would the CNN-MRI perform if we convert the MRI images into fourier transformed image?
+
+

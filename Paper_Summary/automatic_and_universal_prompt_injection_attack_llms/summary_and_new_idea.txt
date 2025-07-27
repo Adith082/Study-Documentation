@@ -1,4 +1,4 @@
 goal hijacking and prompt leaking
 
 
-how do we enhance semantic integrity of prompt injection attacks while aiming for elevated attack performance.
+how do we enhance semantic integrity of prompt injection attacks while aiming for elevated attack performance?
