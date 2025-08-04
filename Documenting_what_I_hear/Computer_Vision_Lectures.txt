@@ -1,0 +1,57 @@
+-> convolution operation can learn a lot of spatial dimensional data.
+
+
+computer vision vs machine vision
+
+computer vision vs human vision
+
+there are so many approaches in computer-vision that do not possess deep-learning or machine-learning! they are rule based heuristic!
+there are so many approaches in computer-bison that do posses deeplearning, machine learning
+
+early 2010's
+people were making filters(rulebased) to change image quality. for example
+there is so called Laplacian smoothing filter that can make a noisy image smooth! by just using the filter. 
+You can make a filter that could perform transform like that but you have to be a smart person to do that don't you?
+
+similarly we can have laplace edge detector filter(3by3 kernel maybe?)
+similarly we have sobel edge detection, canny edge detection (based on how the filters are implemented which give different type of edge only images)
+
+when we use filters, after applying element wise multiplication, we can use some rules like below.
+-> always take absolute value.
+-> normalize what ever values you get from 0 to 255
+
+how does sobel, canny edge detection works?
+when ever we get a sudden change between colors the filters try to detect that edge part!
+
+it is very difficult to come up with one filter that fit all the requirements. 
+
+
+there are traditional computer vision systems (rulebased aka heuristic system), there are only ml based systems
+and most importantly there are (overlap of (computer vision and and ML) --> deeplearning convolution) systems
+
+why is ML based Computervision good?
+
+
+in 2012 Alexnet came to the picture, a deepCNN trained with imagenet(popular benchmark(if your model performs good in this dataset, 
+then you have a very good machine learning mode) dataset) and created history
+Alex net architecture introduced maxpooling, relu activation function instead of tanh activation function.
+performed by a large margin in imagenet dataset competition.
+
+AlexNet showed that Deep learning can outperform traditional methods (SVM's, random forests etc.)
+AlexNet paper showed that using GPU we can train deep neural networks faster!
+
+in machinelearning sometimes we need to manually extract features from data which we feed into algorithm.
+but in deep learninign we don't even need to do that. it would automatically extract features and learn patterns to classify!
+
+shallow neural network vs deep neural network
+
+every neural network has 1 input layer and 1 output layer and some hidden layer.
+shallow neural network has 1 or 2 hidden layers where deep neural network has so much more hidden layer thats why they are called as 'deep'
+
+
+
+
+
+
+
+

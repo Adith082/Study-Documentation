@@ -1,0 +1,16 @@
+radiology
+
+--> different modalities
+
+Different modalities present different aspects (time of exposition, scanning methods, use of radioactive isotopes)
+
+we prefer images that can be acquired in a short time
+sometimes this is not possible, like in nuclear medicine where you use radioactive isotypes. slower method like for nuclear medicine inserting 
+inside patient and wait for a long time to get a picture which leads to lower resolution images.
+
+The goals of medical image analysis are:
+
+    Quantification, measuring the features of a medical image (like area or volume)
+    Segmentation, which is a step used in general to make features measurable (you segment an object and you measure the properties)
+    Computer-aided diagnosis, given measurements and features makes a diagnosis.
+

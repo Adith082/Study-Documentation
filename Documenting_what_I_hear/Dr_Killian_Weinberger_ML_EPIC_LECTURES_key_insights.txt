@@ -1,0 +1,139 @@
+-------------> day1 supervised learning -----------------
+bag of words are a text representations where we track the frequency of each words
+
+each data sample is a vector of d dimension where d is the number of vocabulary available and for that particular sample 
+we have the record of which words  existed and how many times they existed?
+
+
+imagine my vocabulary has 5 words of the following:
+apple, can, bat, I, have (0, 1, 2, 3, 4) th element of vocabulary
+
+if my sample text is "I have have apple"
+then the vector representation of the text would look like below
+[1, 0, 0, 2, 1] each value refereeing to the frequency of the word in my sample text
+
+
+----day2-----
+
+
+
+dense vs sparse vector representations
+
+in sparse representation, we have many many zeroes. we can efficiently store if we want in sparse representations as we might not care about zeroes
+
+how many ml algorithms can there be?
+-> many, could be infinite amount of ml algorithms. example of some of them are given below
+
+  -> decision trees, linear classifiers, artificial neural networks (or deep neural networks), support vector machines etc.
+
+  -> no ml algorithm is best. it all depends on particular problem, particular data which algo would be perfect.
+
+using loss functions, we can figure out which algo would be perfect for a particular data.
+
+loss functions are universally non-negative always. the more moves toward 0 the more better the algorithm fits its data
+some loss functions examples are respectively 0/1 loss, squared-loss(we use it for regression(in this type of problem the label is a Real number) problem), absolute-loss
+
+when to use squared loss and when to use absolute-loss? (hint: ridiculous outliers)
+
+most machine learning algorithms are very much capable of memorizing the training dataset!
+
+
+-> a lot of huge mistakes happened in machine learning by people just because of not being able to split train and test data the right way.
+
+
+
+if the data has temporal component, then the best thing would be to split train test based on time. past data in training, future data in testing.
+dr. wein berger made a mistake when he splitted spam emails randomly. which even though lead to test data getting 0% error. but in that way train and test data had more same data! (this is called data leakage problem)
+because same spam emails can be sent to multiple people. so, in case of temporal data, it is a good idea to split train-test based on time, other wise split uniformly random.
+
+in medical sector. if we get multiple data from a patient, we should not divide that into train and test. each patients data should either be on train or test. Do not divide one patients data into train and test please. that would again create data leakage problem. You train on a set of patient data you test on a different set of patient data.
+
+you might see that we often divide data into train, validation and test data.
+but why do we divide to validation data? can't we just deal with only test data.
+No because if only deal with test data we might be overfitted with test data. confused?
+well, lets say you are conducting experiments based on several models some models might get good accuracy on that particular test data.
+But That does not guarantee that that model is generalized. then what to do? you pick the best model based on validation data.
+and finally you just see the test set for only once just to see the out come and throw it out. test set is for the ultimate final judgement.
+you can tinker your algo based on your validation data or do what ever you want but you will be judged with hidden test data. I hope you get the point.
+
+usually test error would be much less than validation error and validation error would be slightly less than test error.
+
+
+what is the best split? train-val, 80-20 but it actually really depends on the data.
+
+
+
+what is the weak law of large numbers? the average of random variable becomes the expected value in the limit (check on youtube for more descriptive explanation)
+
+different ml functions aka algorithms make very different assumptions.
+
+what is no free lunch theorem in ML? there cannot exist a function that is best for everything.
+
+try to understand what assumptions each algorithm is making.
+
+one of the most important aspects of machine learning given below:
+get the data, understand the properties of the data, make assumptions and check whether these assumptions hold in that data, then research which algorithms leverages these assumptions and makes good predictions. Most people just run their favourite ml-algorithm but its actually not the right way at all!!! 
+
+what is meta learning? imagine you are not able to make assumptions on your own. what do you do?
+you get train, validation data using which you find out which algo performs better and give them final check on test data.
+
+
+K-Nearest-neighbors algorithms make asumptions that data points that are similar(very close together) will always have same labels.
+but you can always make datasets that do not possess to that assumptions which would mean that we won't use K-nearest-neighbours for that data.
+I hope you get the point.
+K-NN, btw is a super-super simple algorithm that is surprisingly effective. 
+the key behind KNN is to use a good distance metric.(Note: we can actually learn these metrics!)
+what is the most commonly used distance metric? its minkowskis distance (from which we can derive Manhattan distance, Euclidian distance,
+maximum distance out of all the features etc. why this minkowskis distance because from this distance algo we can derive a whole family of different
+distances and also this minkowskis distance is fairly very general.
+).
+
+
+lecture on transformers
+--------------------------
+I may visit in may.
+
+with out transformers its not possible to differential between the 2 "may" here.
+as may would have one work embeddings.
+
+What transformers do is that they work with contextual embeddings. I may, in may have two contextual meaning one is a verb another is a month
+transformers map inputs to word vectors (aka embeddings) but they do it such that the inputs can influence each other.
+
+
+encoder -> has self-attention
+
+decoder -> same as encoder except it has cross-attention (along with self attention)
+why are we doing cross-attention in decoder.
+
+
+
+ tobe continued ---
+transformers original architecture work flow : (from encoder) paragraph -> tokens -> token_Id -> token embeddings (for each word)
+-> add positional embeddings to each token embedding.
+
+-> each token embeddings are vector of lets say m size -> this vector is then considered as query, key, value
+where each tokens query means what token this current token is looking for to change current tokens vector embeddings.
+why do we need to change?
+
+example: I may come in may. (what would happen if we were not using token embeddings. we would have used bag of words.
+but in that case m
+)
+
+
+
+
+
+
+in the decoder, time is actually a component. how?
+
+what is masked_multi_head_attention in the decoder?
+
+in the feedforward network, each token embedding vectors are computed inside a neural-network in isolation(unlike the previous attention mechanism phase)
+
+Note:
+Skip connections(a standard trick)(resnet architecture use it! so does transformers) let the model “cheat” by carrying forward important information that might get lost or messed up by deeper layers — it’s like a safety net that ensures useful data isn’t thrown away.
+
+ChatGPT said:
+Zero mean normalization (also called mean normalization or mean centering) is a data preprocessing technique where you subtract the mean of the data from each data point so that the resulting data has a mean of zero.
+It centers the data around 0, which helps many algorithms (like gradient descent, PCA, SVM, etc.) converge faster and perform better.
+It removes bias in the scale of features.

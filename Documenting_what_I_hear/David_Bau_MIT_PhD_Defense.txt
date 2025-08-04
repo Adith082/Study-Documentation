@@ -1,0 +1,38 @@
+Dissection of Deep Neural Network
+
+to ways to control a DNN
+
+-> steer the black box
+
+-> crack open the black box
+
+A surrogate model is an approximation model used to simulate or replace a more complex, expensive, or time-consuming model or system. (LIME uses linear surrogate model to mimic behavior of complex blackbox(probably))
+
+but what is the problem with these surrogate models?
+it might behave differently from the original network.
+
+Another method is input sensitivity saliency maps(heatmaps) (Example: Grad-cam saliency Map)
+---------------------------------------------------
+you could try by masking out parts of the image to see which parts make the most difference to the network!
+there are a lot of ways to make saliency maps. you can use gradients or optimization or masking.
+
+what is the problem with heatmaps?
+although the heatmap does tell us where the network is looking, it does not tell us why and what it is actually looking
+
+which is what we wanna know at the end of the day.
+
+
+concept neuron
+---------------
+does the classical idea of neuroscience (what we perceive is triggered some where in our brain neuron)
+hold for artificial neural network?
+
+
+
+
+
+
+
+
+
+
