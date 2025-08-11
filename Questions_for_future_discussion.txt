@@ -1,5 +1,0 @@
--> How does the Byte-pair encoding algorithm work? (in depth)
-
--> absolute vs relative, which positional embedding should we use? (gpt models use absolute, this embedding is also optimized during training while original transformer has fixed positional embedding!)
-
--> define popular low-rank-transformation technique(used in Lora (low rank adaptation Parameter efficient finetuning)) such as PCA (principle) component analysis and SVD (Singular Vector Decomposition)

@@ -1,5 +1,0 @@
--> detecting stock price syndicate by leveraging LLM ?
-
--> autoregressive vs mask modeling . (comparative study on different language processing task)
-
--> often LORA (low rank adaptation) performs better than full-finetuning!!! (experimentation research work)

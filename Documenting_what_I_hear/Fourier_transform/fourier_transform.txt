@@ -1,0 +1,13 @@
+
+fourier transform is a way to decompose a signal to multiple child signals that sum up to that signal.
+it states that every signal can be decomposed into 1 or many other signals!
+
+so when we do fourier transform of images, this transform converts the image to different frequency components(aka child signals).
+
+
+
+what are the high frequency components in images? these are edges! we can use high pass filter to mask low frequencies and apply it to image.
+In that case, we get the edges of images only(we can do edge detection of images by making a filter which masks the ).  Similarly, if you mask
+the high frequency parts then you would create smoothing filter which would provide blurry images.
+
+in the fourier space, you mask some frequency, then you recreate images from that masked fourier space to get filtered images.

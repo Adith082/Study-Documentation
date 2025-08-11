@@ -1,0 +1,60 @@
+gpt 3.5 was very good on system-1 task which does not require reasoning.
+
+it was very bad on system-2 task which require reasoning. it used to hallucinate so much.
+
+
+what was so special in deepseek r1? (as gpt4-o1 was released several months before)
+
+we will give reasoning powers to an LLM
+
+turning an LLM to reasoning LLM to make the LLM much more trust-worthy(because you get to see the thinking process that an LLM goes through)!
+
+
+reasoning LLMS would be divided into 4 modules
+
+module 1. inference time compute scaling.
+-------------------------------------------
+
+what will happen if we make LLMs think more before giving an answer? it would give answer but it would give more token(for reasoning)
+
+the first method to apply reasoning in a model is to spend more computational resources during inference! (WE DONT CHANGE ANY THING TO THE MODEL JUST FORCE IT TO TAKE MORE TIME,
+meaning we allocate more computing resources during inference then model generates reasoning!
+)
+
+model accuracy scales with the test time compute!
+more inference computational resources lead to better accuracy for the model!
+
+using chain of thought prompting(paper came in 2022 from google-brain), we can get reasonable answers from llms! (you don't tweak anything in the model. you just prompt!)
+what is chain of thought prompting? it is a way to prompt in such a way that you give llms examples of question and how to give answers and then you ask the question
+you wanted to ask so the llm would pick an answer by following the pattern of previous answers. (google it to find more about the chain of thought prompting.)
+
+so this test-time compute catagories can be divided into 2 sections.
+-> prompting
+        -> chain of thought prompting
+        -> Zero shot prompting
+        -> tree of thought prompting
+-> verifiers
+        -> best of N
+        -> beam search
+        -> look ahead search
+
+what are verifier? (will talk later)
+
+so bottomline is that through clever prompting or using verifiers we can infer reason from LLMs.
+
+
+module 2. pure Reinforcement Learning
+--------------------------------------
+I am
+
+
+module 3. supervised finetuning and reinforcement learning (best way to create a reasoning model)
+------------------------------------------------------------
+
+
+
+module 4. pure supervised finetuning and distillation
+---------------------------------------------------------
+what is distillation? imagine you have a large reasoning model and a small model with no reasoning capability at all.
+you want that small model to have reasoning capabilities too. what can you do? you can generate input-output pair dataset by leveraging the large reasoning model
+and finetune your small model with that dataset and boom your small model has reasoning capabilities!!

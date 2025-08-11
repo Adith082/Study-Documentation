@@ -50,6 +50,81 @@ shallow neural network has 1 or 2 hidden layers where deep neural network has so
 
 
 
+lecture 2
+-------------
+first we are gonna take a look at the traditional computer vision approaches 
+(using filters and convolutions which extracts features from the images) before jumping into the deep learning part.
+understanding classical filters applying convolution to extract features will give you so much confidence while applying modern computer vision techniques!
+
+you can use these filters as an image preprocessor before moving them into deep learning. if you don't have much computational power, using filters
+for image preprocessing can save some deep learning training time!
+
+there are many classical well known filters available called Sobel filter, Laplacian filter, canny filter and Prewitt filter etc.
+
+this filter can also be called as kernel which is a matrix usually 3by3 or 5by5.
+
+
+if you want the input and output dimension same, then for bigger kernel you require bigger padding, similarly for more strides your require bigger padding.
+
+padding is required if you dont want to shrink the output.
+
+why use filters?
+-> for feature extraction: to detect edges, textures, corners etc.
+
+-> noise reduction: smoothing filters like gaussian blur ( a bit blurry image but noise free).
+
+-> enhancement: sharpening edges to make further analysis.
+
+-> pattern recognition: 
+
+how do you create a filter logically?
+core idea: approximating derivatives in 2d
+
+derivative of a function f(x) measures how fast a function f(x) is changing on x
+here in f(x) can be called as the intensity function of the image
+as we dont have continuous function for an image, we use finite differences
+
+but most of the times these images will contain noises, so we need to consider smoothing for that as well as differentiation!
+
+sobel has 2 filters one for detecting edges in the horizontal direction, and if I transpose that filter we get a new filter in the
+vertical direction! (how can we deal with noising, check the intuition on shredat panats video cv series vizuara filters and convolutions)
+
+
+prewit filter: a simplified alternative to sobel filter.
+but for detecting edges in complex noisy images sobel is the better choice!
+
+----------------------------------------------------------------------------------------------------------------
+Laplacian filters (we do double differentiation) (we can detect any kind of edge using this Laplacian filter!)
+----------------------------------------------------------------------------------------------------------------
+a filter for edge detection if you some values of it them it will be 0 why? (not the case for noise reduction etc.)
+
+why do some filters look symmetrical?
+balanced response, no directional bias and less shifting
+
+let us play with some kernels!
+
+there is a website called setosa.io where you can upload images and play with your custom kernel!
+
+for blurring, sum of kernel values will be 1, for denoising same thing. but for edges it has to be 0
+
+a light ray intuitive example is given to understand different filters (check the video please)
+
+checkout poloclub cnn explainer for cnn visualizer
+
+
+
+lecture 3
+----------
+what is softmax activation fucntion? converting a set of numbers into a probability distribution such that their sum would be equal to 1.
+we are bulding a simple neral network not having any convolutional operations and not having any activation functions at all. we are using softmax for final class distribution (even though its
+an activation function
+)
+ as it would be a linear model y = w*x + b, it will not be performing well on image classification. roughly 40-50% of accuracy came out of it.
+
+so what can we do to improve from here? we can use deep neural networks, introduce non-linear activation function functions, we can use convolution operation
+
+
+
 
 
 

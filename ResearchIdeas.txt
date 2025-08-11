@@ -14,6 +14,7 @@ and somehow judge them to calculate which language is mostly adapted by the llm
 
 #7 some disease happens so faster in space? why?
 
+# would the quadratic mobilenet or squeeznet quadratic convolutional neural network perform better than resnet?
 
 
 Assalamualaikum Ma'am,

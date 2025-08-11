@@ -1,0 +1,92 @@
+ AlexNet < VGGNet < DenseNet < GoogleNet < resNet   (each sequentially outperformed the previous)
+
+
+
+Xception architecture uses depth-wise seperable convolution for faster computation.
+
+
+experiement done in paper:
+
+The
+ data consists of two classes of points arranged in a spiral
+ shape. We train two simple neural network models with two
+ hidden layers (consisting of 4 and 3 neurons, respectively).
+ The first model uses a ReLU activation function. In the second
+ network, the neurons in the first hidden layer apply quadratic
+ functions and utilize a sigmoid activation
+
+
+this papers novelty is that they explored quadratic convolutional layers.
+
+
+ to create horizontally
+ scaled versions, such that they have the same number
+ of parameters as the CQNN versions. This would allow
+ us to quantify the effect of increasing the parameters by
+ scaling the network horizontally vs. scaling the order of
+ the neural functions in each layer.
+
+future work: 
+
+ Quadratic neurons show a clear improvement in extracting
+ relevant features for classification, however, there is much
+ work needed toward making them practical. Experiments
+ show that the quadratic version of the AlexNet consumes 25
+ times more parameters and floating-point operations (FLOPS)
+ over the linear version, and the ResNet20 like architecture
+ consumes 220 times more parameters and flops.
+
+
+result:
+ Overall, scaling the order of neurons shows an improvement
+ over horizontal scaling.
+
+
+VGG16[33], InceptionResNet [35],
+ DenseNet [16],andXception[4].Mostarchitecturesareopti
+mizedtoperformwellonlarger imagesizes.
+
+
+
+We conduct experi
+ments on the Cifar-100 dataset to understand the contribution
+ of the quadratic neurons and ELu activation towards the
+ performance gain. We train two alternative networks based on
+ the AlexNet architecture, the first uses quadratic neurons and
+ ReLu activation functions, and the latter uses linear neurons
+ and Elu activation. Table IV shows that using ELu activation
+ function instead of ReLu with linear neurons increases the
+ performance by 8%. Using quadratic neurons with ReLu acti
+vation also produces an 8% increase in performance. However,
+ using quadratic neurons with ELu activation produces a 22%
+ increase in performance. We conclude that ReLu activation
+function is unsuitable when using quadratic neurons, rather
+ quadratic neurons when combined with ELu activation per
+form better.
+s
+
+experiments I want to conduct for this paper:
+
+for quadratic operation , the paper used quadratic operation for every convolutional layer.
+what if we use quadratic operation for the very first convolutional layer only? and use Elu activation function for that first layer.
+and then for the rest of the convolutional layer and other layers, I use linear neuron but Elu activation function? (can we improve Alex-net performance with reduced parameters compared to quadratic convolutional neural network.)
+
+experiments
+-> in my configuration, Alex net variant with all quadratic convolutional layers currently sitting at 200 epoch, currently sitting at 47.93%validation accuracy (from scratch)
+
+-> first convolution layer quadratic and all activation layer Exponential Linear Unit. (50.8%) validation accuracy
+
+-> Alex-net variant gave 45.91% performance (no batch normalization used though), (with batch normalization: 53.72%)
+
+
+
+
+and then to address the future work, I also want to conduct experiment by comparing mobileNet(efficientNet) with 
+
+also I want to experiment the performance of quadratic convolutional neural network by applying fourier transform!
+
+what do we mean by the magnitude spectrum in fourier transform?
+
+
+
+

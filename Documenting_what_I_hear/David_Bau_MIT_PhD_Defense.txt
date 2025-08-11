@@ -28,6 +28,12 @@ does the classical idea of neuroscience (what we perceive is triggered some wher
 hold for artificial neural network?
 
 
+hypothesis:
+----------
+concepts are learned by a layer of a network as a whole and not by individual neurons!
+question: do semantics come from units or layer?
+
+classifier dissection conclusion is that concept neurons do appear! ("but I did not understand the proof actually he said something about units of random basis of the same layer")
 
 
 

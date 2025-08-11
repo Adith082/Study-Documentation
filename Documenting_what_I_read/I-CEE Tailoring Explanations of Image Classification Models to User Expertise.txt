@@ -1,0 +1,6 @@
+insights from active machine learning to XAI! (what is active machine learning?)
+from active mL, "query strategies" is leveraged to inform development and evaluations of I-CEE
+
+the papers work applied hypercorrection effect to their frame work which is known as I-CEE
+
+(important paper: concept based explanation in dnn conceptSHAP)
