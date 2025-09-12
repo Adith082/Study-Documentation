@@ -1,0 +1,343 @@
+So the goal of causal reasoning is to figure out these hidden cause-effect chains.
+
+
+
+
+causal diagrams
+
+
+1. mediators
+Sunlight (A) → Skin cell damage (B) → Skin cancer (C).
+
+Here, skin damage mediates the effect of sunlight on cancer.
+
+Once you know the skin is damaged, you don’t need to separately consider sunlight to predict cancer risk.
+
+2. (b) Confounder
+--------------------
+B<-----A----->D
+
+A causes both B and D.
+
+Example:
+
+Sunlight (A) causes Vitamin D (B) and also Skin damage (D).
+
+If you just look at Vitamin D and skin damage, they’ll appear linked, but it’s really sunlight that causes both.
+
+So sunlight is the confounder.
+
+
+
+3. (c) Collider
+
+A----->B<------E
+
+Two different things both cause the same outcome.
+
+Example:
+
+Sunlight (A) and Genetics (E) both affect Skin cancer (B).
+
+At first, sunlight and genetics are unrelated.
+
+But if you only look at people with cancer (conditioning on B), sunlight and genetics suddenly look related — because if someone has cancer without sunlight, it’s probably genetics, and vice versa.
+
+This is called a collider effect.
+
+
+
+Big picture
+
+Causal reasoning lets scientists:
+
+Go beyond “A and B are linked” → to “A actually causes B.”
+
+Decide what to control for in studies.
+
+Ask what if questions, like:
+
+“What happens if we give vitamin D supplements?”
+
+“What if we reduce sunlight exposure?”
+
+This is what makes causal models more powerful than just statistical correlations
+
+
+
+
+If the task is causal (X → Y) like segmentation (images → masks), then unlabeled images don’t add much value.
+
+Why? Because the way we draw masks (Y) only depends on what’s already in the image (X). More raw images without masks don’t help you learn how people annotate.
+
+If the task is anticausal (Y → X) like skin lesion classification (disease → image appearance), then unlabeled images can help, since the disease (Y) leaves patterns in the image distribution (X).
+
+
+
+
+Example — Prostate cancer segmentation:
+
+Doctors outline tumor regions (labels) by looking at the MRI (input).
+
+If you only have tons of MRI scans but no labels, you don’t really learn new information about how doctors draw the outlines.
+
+So SSL isn’t fundamentally useful here.
+
+But in practice…
+
+SSL isn’t completely useless, even in causal tasks.
+
+It can still help regularize the model, reduce overfitting, or cut down how much labeled data you need — but it won’t magically replace labels.
+
+Evidence from research:
+
+A big study found that well-tuned supervised models or transfer learning often beat SSL methods.
+
+Worse, SSL can even hurt performance when the labeled and unlabeled data come from different distributions (e.g., one hospital’s images have more cancer cases than another’s).
+
+🔹 Key Takeaways (layman’s terms):
+
+Segmentation (causal tasks): more unlabeled images won’t fundamentally help, since the labels depend only on the image.
+
+Classification (anticausal tasks): unlabeled images can help, because the disease changes how the image looks.
+
+In practice: SSL might still give small practical benefits, but supervised learning + transfer learning are often stronger and more reliable.
+
+Caution: Be careful when mixing labeled and unlabeled data from different sources (distribution mismatch).
+
+💡 Analogy:
+Imagine teaching someone to recognize handwriting.
+
+If the task is “copy this handwriting style” (segmentation = causal), just giving them more blank paper (unlabeled input) won’t help — they need examples of how letters are drawn (labels).
+
+If the task is “guess the writer’s mood from their handwriting” (classification = anticausal), then even seeing more unlabeled handwriting gives useful clues about patterns.
+
+
+
+
+segmentation tasks are considered as anti-causal where classification problems are considered as anticausal
+
+
+
+
+
+
+1. Invariance Augmentations
+
+Definition: The model’s prediction should not change even if certain transformations are applied to the input.
+
+Examples:
+
+Histogram adjustments (brightness, contrast, intensity shifts).
+
+Adding noise.
+
+Geometric transforms like rotations, scaling, elastic deformations (for classification tasks).
+
+
+
+2. Equivariance Augmentations
+
+Definition: The model’s prediction should change in a corresponding way when the input is transformed.
+
+Examples:
+
+For segmentation/localization tasks, if you flip or rotate the image, the segmentation mask or bounding box must also flip/rotate accordingly.
+
+Prostate tumor example (segmentation): If you mirror the MRI scan, the segmentation mask of the tumor must also mirror.
+
+Effect on learning: These augmentations provide information about the joint distribution 
+𝑃
+(
+𝑋
+,
+𝑌
+)
+P(X,Y), because they capture how input and output structures are linked (e.g., anatomy, acquisition conditions).
+
+
+
+
+
+
+
+
+
+
+
+Data augmentation enriches training by generating valid (X, Y) pairs.
+
+Invariance augmentations help classification (ignore irrelevant variations).
+
+Equivariance augmentations help segmentation/localization (track transformations).
+
+That’s why augmentation works broadly, unlike SSL, which is limited for causal tasks.
+
+
+
+
+
+Determining the presence and
+ direction of causal relationships from data is the realm of causal discovery, which is
+ an extremely challenging and active field of research but is beyond the scope of this
+ article.
+
+
+The text is about causal reasoning fundamentals in machine learning, and it introduces three levels of tasks:
+
+Prediction
+
+Goal: Use observed data to guess missing information.
+
+Example: Classify an image as “tumor” or “not tumor.”
+
+This is what most ML models do.
+
+Intervention
+
+Goal: See what happens when we actively change something.
+
+Example: In a drug trial, force one group to take the drug and compare outcomes.
+
+This is “doing” rather than just “observing.”
+
+Counterfactual analysis
+
+Goal: Ask “What would have happened if things were different?”
+
+Example: If this patient had received chemotherapy instead of surgery, would they have survived longer?
+
+Needs both observed data + a structural causal model.
+
+👉 Most people think causal inference only matters in RCTs or experiments, but the authors argue: even prediction tasks in medical imaging sometimes require causal reasoning.
+
+
+
+
+
+
+
+
+
+
+Think of a causal diagram as a map of “who causes what” in your data.
+
+Steps:
+
+Step 1: Pick the variables.
+
+These are the “things that matter.”
+
+Example in medical imaging:
+
+Image itself
+
+Patient’s health status
+
+Diagnosis label (benign/malignant)
+
+Annotation policy (how radiologists labeled images)
+
+Hospital site
+
+Image post-processing software
+
+They don’t all have to be directly measurable — you can include abstract concepts (like “annotation policy”) if they’re important for explaining the process.
+
+Step 2: Add arrows.
+
+An arrow = “causes.”
+
+No arrow = you assume no direct causal effect.
+
+Example:
+
+Disease → Image appearance (the tumor actually changes how the scan looks).
+
+Image appearance → Doctor’s label.
+
+Step 3: Granularity (detail).
+
+You can draw the chain step by step (Disease → Tissue change → Image pixels → Label).
+
+Or you can simplify it (Disease → Label).
+
+Depends on how detailed you need the explanation to be.
+
+Step 4: Add domain/environment info.
+
+Example: Hospital A vs Hospital B (different scanners, patient demographics).
+
+These “domain indicators” are shown as special variables with arrows going out.
+
+If you don’t draw an arrow from “hospital” to “image,” you are assuming images look the same regardless of hospital (which might be wrong).
+
+Step 5: Add selection variables.
+
+Sometimes the dataset doesn’t include everyone, only a subset.
+
+Example: only patients who agreed to biopsy are included.
+
+You’d draw a “Selection” node and connect arrows from the variables that influenced who got included.
+
+Step 6: Iterate.
+
+After making the diagram, check: Does it really reflect reality? If not, fix it.
+
+Goal: balance accuracy (don’t omit important stuff) with clarity (don’t overcomplicate).
+
+
+
+2. Interpreting a causal diagram
+
+Why do we bother? Because diagrams reveal biases.
+
+Bias = fake correlation caused by hidden paths.
+
+Two main classic types:
+
+Confounding bias = a hidden common cause.
+
+Example: Smoking causes both yellow teeth and lung cancer → makes it look like yellow teeth cause cancer.
+
+Collider bias = conditioning on a common effect.
+
+Example: Hospital admissions depend on both disease and age. If you only look at admitted patients, you may create spurious links between age and disease.
+
+Dataset shift as bias:
+
+Suppose you train a model using data from two hospitals.
+
+Hospital A has younger patients, Hospital B has older patients.
+
+If you don’t include “Age” as a variable, your model might accidentally think “hospital differences” explain the image differences.
+
+Adding “Age” blocks that hidden path: Hospital → Age → Image.
+
+This is what “controlling for” a variable means: cutting off fake pathways.
+
+✅ Simple analogy:
+
+Imagine you want to build a causal diagram for ice cream sales.
+
+Variables: Weather, Temperature, Ice Cream Sales, Sunglasses Sales.
+
+Arrows: Weather → Temperature → Ice Cream Sales. Also, Weather → Sunglasses Sales.
+
+If you don’t include “Weather” in the diagram, you might wrongly conclude Ice Cream Sales cause Sunglasses Sales.
+
+Adding “Weather” blocks that fake path — now you see both are just caused by weather.
+
+🎯 Summary in plain words
+
+Building a causal diagram = list all important factors, draw arrows for causes, and decide how detailed you want to be.
+
+Interpreting diagrams = look for hidden paths that create fake correlations (biases), and fix them by including the right variables.
+
+In medical imaging, this helps explain dataset shift (e.g., hospital differences, selection of patients) and ensures models don’t pick up misleading patterns.s
+
+
+
+
+
+If you don’t draw an arrow from “hospital” to “image,” you are assuming images look the same regardless of hospital (which might be wrong).

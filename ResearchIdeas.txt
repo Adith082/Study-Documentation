@@ -14,14 +14,17 @@ and somehow judge them to calculate which language is mostly adapted by the llm
 
 #7 some disease happens so faster in space? why?
 
-# would the quadratic mobilenet or squeeznet quadratic convolutional neural network perform better than resnet?
+#8 would the quadratic mobilenet or squeeznet quadratic convolutional neural network perform better than resnet?
 
 
-Assalamualaikum Ma'am,
+#9 one pixel attacks work well for any resolution images?
 
-Ma'am, I hope this message finds you well. I am Adith from Sust Cse18 batch. Ma'am, I am currently planning to apply for lecturer position at Brac University. Ma'am, with your kind permission, I would like to include your information in the reference section of my application profile.
 
-Ma'am, thank you very much for your time and consideration. I am looking forward to your response.
 
-Best Regards,
-Md Adith Mollah
+#10 Determining the presence and
+ direction of causal relationships from data is the realm of causal discovery, which is
+ an extremely challenging and active field of research but is beyond the scope of this
+ article.
+
+
+#11 quadratic dilated convolutional neural network?

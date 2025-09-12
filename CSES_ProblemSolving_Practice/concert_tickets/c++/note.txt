@@ -1,0 +1,1 @@
+read black tree is a self balanced bst where nodes will be defined as 2 colors known as black and n red

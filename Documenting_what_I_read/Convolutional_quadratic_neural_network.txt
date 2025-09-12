@@ -72,9 +72,9 @@ what if we use quadratic operation for the very first convolutional layer only? 
 and then for the rest of the convolutional layer and other layers, I use linear neuron but Elu activation function? (can we improve Alex-net performance with reduced parameters compared to quadratic convolutional neural network.)
 
 experiments
--> in my configuration, Alex net variant with all quadratic convolutional layers currently sitting at 200 epoch, currently sitting at 47.93%validation accuracy (from scratch)
+-> in my configuration, Alex net variant with all quadratic convolutional layers currently sitting at 200 epoch, currently sitting at 47.93% validation accuracy (with batchnormalization), without batchnormalization (46.31%) 
 
--> first convolution layer quadratic and all activation layer Exponential Linear Unit. (50.8%) validation accuracy
+-> first convolution layer quadratic and all activation layer Exponential Linear Unit. (50.8%) validation accuracy (with batch normalization), 
 
 -> Alex-net variant gave 45.91% performance (no batch normalization used though), (with batch normalization: 53.72%)
 

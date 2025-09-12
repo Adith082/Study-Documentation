@@ -1,0 +1,95 @@
+AI_agents
+
+
+papers to keep note:
+
+1. chain of thought prompting elicits reasoning in LLM's
+
+2. synergizing reasoning and acting in language models
+
+3. toolformer: language models can teach themselves to use tools
+
+4. generative agents: interactive simulation of human behavior
+
+
+n8n, crewAI, langGraph these applications are based on the above research papers
+
+on a general note, an agent is something that can take you from point A to point B and saves you time and money.
+
+but car and plane can save you time right?
+
+yes, but agent can make its own decision, an agent has its own plan too!
+
+but a self driving car can make its own decision.
+
+yes, but an agent has access to tools!
+what are some examples of these tools. example: internet search, scrape a website(getting required info), draft an email, booking
+
+
+using tools, agent plans and makes decision. while using tools, it communicates with the external environment.
+
+an agent needs to have memory of what has happened in the past
+an agent should be capable of receiving feedback from humans and improve accordingly
+
+
+example:
+imagine you wanna go for a trip of 7 days to florida. you currently reside in Bangladesh. instead of making decisions and planning
+you utilize an agent!
+
+if something can take from point a to point b by adding value(time and money), is capable of reasoning, decision, planning, uses external tools from environments to make decision, reason, plan, it has memory, human feedback and improve
+
+
+why are we talking about this agentic AI now? why not before?
+because we have just had the revolution of chatgpt.
+the attention mechanism of 2017 paper and 2023, 2022 chatgpt led us to this. language understanding just takes agentic Ai to another level, thats why
+
+LLM is also the foundational part of an AI agent (the most important one.)
+
+an agent has different agency level.
+
+minimal or simple agency level: an LLM interacting with a tool (but no planning or decision made)
+
+there can be multi-step agent: lays out short plan and carries it step by step (personal travel planner that gathers flight options, hotels and local activities.)
+
+there can be multi-agent: where one agentic workflow starts another agentic workflow
+: example: travelplanner agent calling booking agent, then booking agent calling email agent
+
+
+
+video analysis (analyze job interview videos to identify qualifying candidates) agent example:
+search, visit-website, download-videos, transcripts, sentiment, ranking candidates
+
+
+
+lecture-2
+-------------
+
+agents use LLMs for planning, reasoning and decision making. that's why it can be called the brain of AI-agents.
+agents interact with the environment and they have memory.
+
+why we call language model? why not next token prediction model?
+
+
+gpt papers indicate that the more the number of parameters, the better the language model (high accuracy) able to do more amount of language tasks. (the scaling law of LLM's)
+
+the larger the parameters, the more emergent properties arrive!
+
+
+so why do llm's need more number of parameters? (they get emergent properties, learn language and meaning which one do you believe?)
+
+
+why deepseek having less parameter performs as good as gpt? because deepseek introduced several architectural innovations like KV cache optimizations, multi-head-latent attention,
+
+rotary positional encodings.
+
+small LM's are the next bigthing specially for enterprise applications.
+
+
+next lecture we'll look at an important paper related to the integration(reasoning and acting) of LLM with agents (ReAct: Synergizing reasoning and acting in language models)
+
+
+
+
+
+
+

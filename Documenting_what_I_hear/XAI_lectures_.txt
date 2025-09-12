@@ -1,0 +1,40 @@
+adversarial attacks, forcing the neural network to make mistakes!
+
+lets say you have an image that the neural network correctly predicts with moderate accuracy. Now, if you add a small (very small lets say .007) percent of noise(deliberately chosen!) to each
+pixel of that image and then ask the neural network to classify, in that case nn might completely misclassify with high confidence rate!
+
+there is blackbox adversarial attack where where we only have access to models predictions from which we have to create adversarial examples.
+then there is white-box adversarial attack  where we have models inner info to measure our adversaraial examples.
+
+why does adversarial examples exist?
+for images, their decision boundaries are very close. so for that if you add perturbed data, nn would misclassify the data.
+
+for almost all of the images you can get its adversarial examples.
+
+self driving car adversarial attacks
+
+
+
+adding small purturbation can lead to mis diagnosis by AI system!
+
+what is fsgm or fast gradient sign method?
+here for an image sample, we try to calculate in which direction can it go to surpass its decision boundary.
+and then based on that we add the perturbation to the image pixels.
+
+how one pixel attack is made?
+by implementing an algorithm called differential evolution.
+
+
+in usual adversarial attacks, you modify all pixels, but limit the amount by which you modify.
+
+in one pixel attack: you modify only 1 pixel, but you can modify the value by how much you like!
+one pixel attack works really well in small resolution images. really (can be a research question)?
+
+
+
+My goal is to leverage existing and novel Explainable AI techniques to gain user's trust on complex AI systems (preferably in Healthcare and Education).
+
+
+counterfactual explanations: the smallest amount of change that we can bring to a feature or a set of features that gives a different prediction.
+-----------------------------
+

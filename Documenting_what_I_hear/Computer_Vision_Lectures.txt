@@ -123,10 +123,771 @@ an activation function
 
 so what can we do to improve from here? we can use deep neural networks, introduce non-linear activation function functions, we can use convolution operation
 
+lecture 4
+------------
+
+training on 2 hidden layer neural network.
+if you see huge fluctuation in your validation accuracy, then this is a sign that your model parameters are not being very optimized
+
+why you use (nonlinear)activation function? you use it so that your model would learn non-linear patterns in the data. if you don't use it, then your model does not capture nonlinear patterns rather remains linear as always. its because of activation functions, neural networks can be called universal function approximators. neural networks true power lies in activation functions!
+
+try to show train-loss vs validation-loss, train acc vs validation-acc plot
+
+
+
+lecture 5
+-----------
+how to perform hyperparameter tuning in a proper practical professional systematic way?
+
+last lecture we were interested in changing epochs, learning-rate, batch-size, nodes in hidden layers, image height/width 
+
+checkout the website called "weights and Biases" an AI platform.
+
+from now on, do all of your ml experiments with weights and biases try to be professional!
+
+
+lecture 6
+-------------
+
+regularization, dropout, batch-normalization, early-stopping (these techniques will help reduce overfitting, increase validation data accuracy )
+
+-> shallow NNs can only detect edges where deep NN's along with edges, they also detect textures! which help to detect objects.
+the more deep, the more complex patterns you can detect
+
+lasso or ridge which is better in which situation?
+
+
+why high weights lead to overfitting? because in that case, the function order is way too much high than generalized non overfitted model.
+
+when the function order is too much high, then the sum of weights or weights individually is also very much higher.
+
+l1 is lasso regularization (sum of absolute values of weights), and l2 (sum of squared values of weights) is ridge regularization
+
+
+when to use l1 and when to use l2?
+
+from gpt
+When to use L1 (Lasso)
+
+Use when you suspect that only a few features really matter, and the rest are noise.
+Think of L1 as a “sparse model builder” — it keeps only the most important features.
+
+
+When to use L2 (Ridge)
+
+Use when most features contribute a little bit to the prediction.
+
+L2 shrinks all weights smoothly but usually doesn’t make them zero.
+
+Example: Predicting student grades based on many small factors (attendance, homework, quizzes, participation, etc.) where all factors play some role.
+
+👉 Think of L2 as a “weight balancer” — it makes sure no feature dominates too much.
+
+
+lecture 7
+----------
+pretrained embeddings, transfer learning, fine-tuning and differential learning
+
+training a deep Neural network from scratch using small dataset would lead to overfitting.
+you need millions of images to train these deep NN to shape them. 
+
+from the previous lectures, adding extra hidden layer even though did not improve the accuracy, it did reduce the losses!
+
+there can be 2 types of transfer learning possible:
+
+->           fixed feature extractor: freeze the pretrained model (just train the new added final classification head)
+(you should you this type only when the dataset is small (may be a 100 frequency of data)) and similar to original data that the model was pretrained. for example a big flower dataset
+was trained before you train the final classification layer with your own flower data.
+
+
+
+->           fine-tuning (unfreeze a few top layers of pretrained model and retrain slightly for better adaptation (along with classification layer of-course))   
+(you should use this type of transfer learning when you have medium-size data(lets say 5000 - 10000) and using these data you are gonna perform slightly different task
+  lets say you use imagenet as pretrained model and you use 5000 only flowers data to fine
+)
+
+what is global avg pooling 2d before classification head?
+why batch normalization layer is partially trainable?
+
+while training, we can also indroduce something like learning rate re-scheduling! initially you might keep big learning rate for some epoch, then after that you might
+reduce the learning rate!
+
+while we use transfer learning, we often start with a learning rate to quickly adapt, but later we want to slow down to finetune carefully.
+
+we can reschedule or decay the learning rate during training.
+
+there are several ways in which we can decay or reschedule learning-rate!
+-> step decay (drops suddenly after a few epoch)
+-> Exponential Decay (Smooth decay every epoch)
+-> Cosine Annealing (smoothly oscillates learning rate like a cosine curve)
+-> Reduce Learning-Rate on Plateu -> reduce learning-rate when when validation-loss plateaus. (It means: If the model’s performance (usually validation loss or accuracy) stops improving for a while, then reduce the learning rate to allow finer adjustments)
+
+
+
+
+
+what is differential learning rate?
+it is a way to define two different learning rates, one for the base model (freezing pretrained part) and another learning rate is for the unfreezing layers part.
+now freezing part should have low learning rate (it already got enough trained by big datasets thats why) and the rest of the parts (specially the classification head parts which
+have random weights should learn faster, thats why it should have higher learning rate0
+)
+
+
+Lecture-9
+----------
+AlexNet: Convolution, pooling, deep-Neural-Network
+why CNN requires filters? to identify more and more features
+each cnn uses multiple filters, so multiple feature maps are stacked
+
+in cnn, the values inside the filters are weights which will be learned during the training process
+
+
+how a single convolution applies on top of a real rgb image?
+an example: imagine you have an image of size 10*10*3 where where 3 indicating 3 different channels called r, g, b.
+
+you want to extract 5 features from this image. so you will have 5 filters each would have a size (a hyperparameter)
+
+of 4*4*3 where again 3 is the indication of the different channels, and 4*4 is the actual filter size of each of those channels
+
+the output of applying those 5 filters would result in an output of 10*10*5 dimension values (if you have appropriate padding and stride for example padding 1 and stride 1)
+
+so the learnable parameters are 4*4*3*5 = 240
+
+feature map is the output after applying convolution by different filters from the previous input
+pooling layers
+---------------
+pooling reduces spatial size and dimension (if you use stride well enough)
+proper pooling technique is max pooling where you take the max value of a pixel group of particular filter(for each filter we also add a bias term) size from  (usually small say 2*2)
+
+benefits of pooling layers:
+1. downsamples the feature maps.
+2. introduces spatial invariance.(reduce noises if black noises available) variability of the pixel values will reduce.
+3. reduces parameters.
+
+
+My big question? how do we understand which architecture is best for which data? how can we build our own customized architecture for our own
+specific task
+
+why did Alex net accomplish?
+-> massive performance improvement on imagenet dataset
+-> DNN became mainstream
+-> use of GPUs for training for the first time ever
+-> Introduced several architectural innovations (like relu activation (for faster training), dropout regularization, maxpooling, dataaugmentaition like mirroring, random-cropping, rotation)
+-> 
+
+
+lecture-10
+-------------
+How VGG-NET(outperformed alexnet by a large margin) architecture threatened Alex Net's Dominance?
+
+how can we improve CNN performance without exploding compute and parameter cost?
+
+relu leads to more confident predictions
+
+VGG network increased the number of layers or (depth) but they introduced convolution filter of uniform sizes (all of them 3by3 (unlike alex net which used different sizes of filters at different layer stages))
+
+while implementing this network, we are also going to see how input size affects the shape and size of the classifier layers
+the VGG_net_paper came in 2014 full form of VGG is visual geometry group of oxford university
+
+but what was the big deal behind this VGG network?
+it proved that deeper networks (with simple convolution uniform filters) actually lead to drastic improvements accuracy.
+-> VGG architecture is modular and clean.
+
+-> VGG introduced more non-linearity(activation functions) and fewer paramters
+
+the concept of VGG shaped how modern networks are actually designed (resNet, Densenet etc.) which concept? stacking more small filters with increasing depth of networks
+
+if you want to have a good starting point( even in industry level projects too!) VGG can be a very good choice as a pretrained backbone model
+
+many subsequent architectures like resnet, mobilenet, unet drew structural ideas from VGG's block-wise design!
+this VGG(network is comparatively easy to remember) popularized block-based thinking for CNN design
+resnet has similar architecture design as VGG. the novel thing that resnet added was the residual connection(as we create more deeper layers we tend to forget what was at the very beginning for which we might have vanishing gradient problem which is tackled by residual connection between different blocks
+
+there are several VGG networks available. But out of which, VGG-16 and VGG-19 is more famous or popular
+
+
+if you train a model for some epoch and stop at a validation rate but you see that validation accuracy is much higher than training accuracy.
+this is a problem(or not?) meaning it could be that the models pretrained weights are so good that it could predict so well for your validation data. And it can be solved by running more epochs. (you might face this problem(or not?) in VGG) what does it indicate when validation accuracy is higher than training accuracy? (it means that model validation data is getting good insights from pretrained part rather than added extra layers which were trained from scratch!) (higher validation rate in early epoch indicates good generalization from pretrained features)
+
+in VGG the image input has to be 224by224by3
+
+
+lecture-11 GoogleNet(Inception-V1)
+-----------
+
+the total number of paremeters in VGG was huge, about 138 million parameters.
+
+
+can we design an architecture that is both deep and and efficient(while training)? the answer is google-Net
+
+they introduced the idea of multiscale processing within each layer. they said, instead of committing to one filter size, why not allow the network to learn from
+multiple filter sizes in parallel?
+
+it has multiples inception modules stacking one after the other in a series
+
+(it has much less number of parameters () compared to VGG which has 138-millions of parameters)
+
+its inception module has 1by1, (1by1 then)3by3 and (1by1 then)5by5 convolution along with 3by3 maxpool. (they operate simultaneously and concatenate!)
+
+-> this approach allows the network to learn both global and local features simultaneously.
+
+-> be deeper(adding more inception modules) and wider(the module itself is wider (check internet))!
+
+
+instead of directly applying 5by5 convolution, if you first apply 1by1 and then apply 5by5, it would reduce the number of parameters. 
+
+
+due to 1by1 convolution googleNet's parameter boiled down to jus 6.8 million compared to vgg's huge 138 million parameter model.
+
+ adding 1by1 convolution actually reduces the number of parameters! how? check internet
+
+googleNet inspired many extensions such as Inception-V2(has factorized convolution concept probably), V3, V4, Inception-ResNet etc.
+
+this network showed that multiscale sparse-processing can outperform bruteforce-depth(vgg).
+
+
+
+
+lecture-12 (squeeze-Net(Berkley and deepscale) architecture)
+--------------
+-> goal of this architecture was to create Alexnet-Level accuracy with dramatically fewer paremeters!
+-> also to enable efficient on-device deployment(rather than calling models hosted on the cloud).
+
+
+here a "fire" module has been introduced which is similar to inception module of google-Net
+in fire module, first a 1by1 convolution is applied to reduce number of parameters or squeeeze, then parallel 1by1 and 3by3 convolution
+is applied and concatenated to expand dimention from sqeeze
+why this module works?
+--> 1by1 drastically reduces number of parameters, 3by3 only applied to fewer channels and output is rich in multi-scale features.
+
+achievements of squeezeNet:
+achieved Alex-Net level accuracy, used only 1.2 million parameters( alexnet has 60 million parameters, vgg 138 million, inception-V1 having 6.8 million), model-size: 4.8mb can be compressed to <0.5mb, perfect for mobile, realtime and low-power applications, inspired future light-weight models (eg. mobileNet, shuffleNet)
+
+
+
+lecture-13 (ResNet)
+-------------------
+one of the most popular cnn architectures
+
+resnet solved the issue of vanishing gradient(particularly the initial layers weights and biases not getting updated as much as it should due to the fact that the actual deep neural network is just so very deep)
+
+
+ResNet: How it solved Deep Learning's vanishing gradient problem forever
+Computer Vision from Scratch
+miscllenous Note: I think for blurry to perfect image identification task, resnet would do so well as it learns the residuals rather than the actual output 
+
+
+The problem: Going deeper 
+in NN broke everything
+By 2015, we had models like:
+AlexNet (2012) - 8 layers
+VGG16 (2014) - 16 layers
+Inception v1 (2014) - ~22 layers
+Logically, deeper networks should be more powerful, right?
+
+But in practice, deeper networks performed worse.
+Even when:
+You initialized correctly
+Used batch normalization
+Trained for longer
+
+Training error increased when you added layers. This was not overfitting - it was a fundamental optimization failure.
+
+
+Recap
+What we did so far in the course?
+
+Till now we tried the following for the 5-flowers dataset.
+Linear model (no activation)
+1 hidden layer with 128 nodes + ReLU activation
+1 hidden layer with 128 nodes + ReLU activation + regularization + batch normalization + dropout + early stopping
+Transfer learning
+AlexNet
+This paper has been cited more that 170,000 times!
+VGG
+GoogleNet (Inception V1)
+
+SqueezeNet
+
+
+Before we start
+Starting is easy
+Finishing is not
+
+
+
+
+
+Let us take a pledge to finish what we started
+
+
+Deep Learning's vanishing gradient problem
+In very deep networks, during backpropagation, gradients often:
+
+Shrink exponentially
+Fail to update early layers
+This means:
+Shallow layers stop learning
+Network gets stuck in a suboptimal state
+
+Shallow layers = First few convolutional layers
+Why is this a problem?
+The shallow layers are critical - they detect edges, textures, shapes.
+But if they do not receive gradient signals, they cannot improve.
+Your model becomes stuck - training error stays high.
+
+This is not overfitting. It is undertraining - the model cannot learn due to bad optimization.
+
+
+Mathematical intuition of vanishing gradient
+Most activation functions (like sigmoid or tanh) squash inputs into small ranges:
+Their derivatives are less than 1, often between 0 and 0.25.
+
+During backpropagation, the chain rule multiplies these small numbers:
+
+The gradient vanishes - and early layers stop learning.
+
+
+The Breakthrough: Residual Learning
+Kaiming He et al. (2015) at Microsoft Research asked a simple question:
+
+What if the layer does not learn a full transformation?
+What if it only learns the residual?
+They proposed:
+Now instead of learning a complex function directly, the layer just learns what to add to the input.
+
+This simple idea changed everything.
+
+
+Skip Connections (Shortcut Paths)
+ResNet solved vanishing gradient forever!
+Instead of expecting each layer to learn a completely new representation, ResNet builds “residual connections” (also known as skip connections) that allow the original input to flow directly to deeper layers.
+
+In mathematical terms, each residual block receives an input X and learns only the change needed to transform X into a better representation. 
+
+Formally, it outputs X+F(X), where F(X) denotes the learned residual function.
+This design ensures that early-layer activations can pass straight to the final output, preserving their influence on the network’s predictions. 
+
+By allowing the gradient to flow back without getting diluted through many transformations, ResNet effectively addresses the vanishing gradient problem. 
+
+As a result, even very deep networks (sometimes hundreds of layers) can be trained successfully, because initial layers still receive strong updates.
+
+
+ResNet killed all other competitors in 2015
+Shortly after its introduction, ResNet dominated the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 2015. 
+
+In the classification task, ResNet-based models achieved a top-5 error rate that surpassed all competitors. This victory signaled a major leap in performance, as it was the first time a network of such depth could outperform shallower architectures so convincingly.
+
+
+In addition to the classification challenge, ResNet scored first place in the ILSVRC 2015 detection, localization, and segmentation tasks. 
+
+
+It also delivered winning results in the Microsoft COCO detection tasks that same year. 
+
+These back-to-back achievements quickly established ResNet’s reputation as a formidable architecture, influencing how future deep models would be built.
+
+The ILSVRC subset (often called “ImageNet” in practice): This is the version used for the ImageNet Large Scale Visual Recognition Challenge (ILSVRC). It has around 1.2 million training images, 50,000 validation images, and 100–150,000 test images, spread across 1,000 classes.
+
+
+Why is residual link such a big deal?
+Consider the task of improving the resolution of an image starting with a blurred image. You can train a neural network such that it directly predicts the final output, which is the high-resolution image.
+NOTE 1: ResNet only learns the necessary change
+NOTE 2: In ResNet block, dimensions remain unchanged
+Output=Input+F(Input)
+
+
+If dimensions remain unchanged, how can you do classification?
+A common point of confusion with ResNet is how it can perform tasks like classification if its residual blocks keep the same dimensions. 
+
+After all, if each block preserves height, width, and number of channels, does that not suggest the network simply “enhances” the input image rather than transforming it into class scores?
+NOTE 1: Residual blocks preserve dimensions only locally
+NOTE 2: Dimension can change from one stage to another
+Strided convolutions: A convolution layer with a stride greater than 1 (usually stride = 2) halves the spatial dimension (height and width) while often doubling the number of channels. In the example below, the stride is 3. Thus the input dimension (9x9) is reduced by a factor of 3 (3x3).
+Downsample connections: If the skip path must match a changed shape, a 1x1 convolution (or a similar method) adjusts the input’s dimension so it can be added correctly.
+NOTE 3: Classification through global pooling and a fully connected layer
+Global average pooling: ResNet usually ends with a global average pooling layer that collapses the spatial dimension (e.g., 7x7) into a 1D vector by averaging across each channel.
+
+Fully connected layer: This condensed vector then passes to a fully connected (dense) layer. The output of that layer corresponds to class scores (for example, 1,000 scores for ImageNet).
+
+
+ResNet as an Euler method
+From a theoretical standpoint, ResNet can be viewed as an Euler method in the sense that each residual block represents a small “update” or “step” to the input:
+output=input+F(input)
+
+
+ResNet architecture
+
+
+What does “50,” “101,” “152” etc. mean?
+A network labeled “ResNet-50” contains 50 layers that are trainable and contribute to feature transformation.
+Similarly, “ResNet-101” has 101 layers, and so forth.
+The jump from ResNet-50 to ResNet-101 or ResNet-152 primarily involves stacking more of these bottleneck blocks, giving the model a greater capacity to learn complex representations.
+
+
+ResNet compared against other models
+
+
+
+Code [the relevant parts]
 
 
 
 
 
 
+Results
+Conclusion: This is the best model so far.
 
+Congrats for finishing a small yet
+significant step
+
+Be proud of yourself
+
+
+
+lecture-14 MobileNet: efficient_CNN_for_mobile_vision_applications-
+-----------------------------------------------------------------------
+
+core-idea: depth-wise separable convolution (first use depthwise convolution, then use pointwise convolution)
+
+
+
+
+
+Deep Learning That Fits in Your Pocket - MobileNet Explained
+Computer Vision from Scratch
+
+
+Why MobileNet?
+As deep learning moved from server farms to mobile phones, IoT devices, and edge computing, models like VGG and ResNet became too heavy:
+
+
+High memory consumption
+Slow inference time
+Battery drain on devices
+
+We needed lightweight architectures that could run fast and small while maintaining decent accuracy.
+
+
+Enter MobileNet
+Proposed by Google in 2017
+Paper: "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications"
+Authors: Andrew G. Howard et al.
+
+
+
+Recap
+What we did so far in the course?
+
+Till now we tried the following for the 5-flowers dataset.
+Linear model (no activation)
+1 hidden layer with 128 nodes + ReLU activation
+1 hidden layer with 128 nodes + ReLU activation + regularization + batch normalization + dropout + early stopping
+Transfer learning
+AlexNet
+This paper has been cited more that 170,000 times!
+VGG
+GoogleNet (Inception V1)
+
+SqueezeNet
+
+ResNet50
+
+
+Before we start
+Starting is easy
+Finishing is not
+
+
+
+Let us take a pledge to finish what we started
+
+
+MobileNet core idea – Depthwise separable convolution
+Traditional convolution is computationally expensive.
+A single standard conv layer with:
+3×3 filter
+32 input channels
+64 output channels
+ … requires 3×3×32×64 = 18,432 parameters!
+
+
+MobileNet does this differently:
+It factorizes standard convolution into two simpler operations:
+
+
+🔸 Depthwise Convolution
+Applies one filter per input channel
+ → Captures spatial information
+ → Much cheaper (3×3×32 = 288 params)
+
+
+🔸 Pointwise Convolution
+Applies a 1×1 convolution across all depth slices
+ → Combines information across channels
+ → 1×1×32×64 = 2,048 params
+
+✅ Total: 288 + 2,048 = 2,336 parameters
+v/s 18,432 in standard conv!
+
+That is nearly 9× fewer parameters with very little accuracy loss.
+
+
+Architecture of MobileNet v1
+BN: Batch normalization
+
+
+
+Lecture-15: DenseNet and EfficientNet
+----------------------------------------
+DenseNet (for better connectivity) (reduces vanishing gradient as each and every conv layer communicates with other conv layers, every layer has direct access to gradients and inputs from earlier layers)
+difference between densenet and resnet?
+densenet automatically(implicitely) implements regularizations. How?
+
+
+EfficientNet (for better scaling (does compound scaling))
+
+DenseNet & EfficientNet - The quest for efficiency & connectivity in CNNs
+Computer Vision from Scratch
+
+
+Introduction: The need 
+for better CNNs
+Classical CNNs like VGG focused on increasing depth and width to improve accuracy.
+
+ResNet tackled the vanishing gradient problem with skip connections.
+
+
+But deeper and wider models led to inefficiency.
+
+
+The need arose for:
+Better scaling (EfficientNet)
+Better connectivity (DenseNet)
+
+We needed lightweight architectures that could run fast and small while maintaining decent accuracy.
+
+
+DenseNet: Densely Connected Convolutions
+📘 Paper:
+“Densely Connected Convolutional Networks” (2017) by Gao Huang et al.
+
+
+✨ Key Idea:
+Each layer gets input from all previous layers in a feedforward fashion:
+
+
+
+DenseNet benefits
+
+Every layer receives inputs from all previous layers. So:
+It does not need to relearn the same features
+It selectively uses useful features
+This reduces the complexity of what each layer has to learn
+➡️ Less overfitting, because the model does not waste capacity learning redundant things.
+Feature reuse - every layer has direct access to gradients and inputs from earlier layers
+
+Fewer parameters than traditional networks
+
+Improved gradient flow - solves vanishing gradient better than plain deep nets
+Implicit regularization - discourages overfitting
+
+HOW?
+
+Let’s say we have 3 layers inside a dense block:
+Layer 1 takes the input image and produces x1
+Layer 2 gets the original input + x1, concatenated along the channel dimension
+Layer 3 gets original input + x1 + x2 as its input
+Dense block:
+Uses concatenation instead of addition like ResNet
+Each layer produces a fixed number of output feature maps called growth rate
+
+So if each layer adds new features, those are stacked, not added.
+This is called dense connectivity.
+
+Think of DenseNet like building a conversation where every new speaker hears everything said before, rather than just hearing the last sentence.
+
+This makes the final understanding more complete.
+
+
+DenseNet compared against other models
+
+EfficientNet: Scaling CNNs 
+the smart Way
+📘 Paper:
+“EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks” (2019) by Mingxing Tan and Quoc V. Le, Google.
+
+Problem:
+Traditional models scale arbitrarily by:
+Adding depth (more layers)
+Adding width (more channels)
+Increasing image resolution
+But this scaling is unbalanced and inefficient.
+
+EfficientNet’s key idea is:
+"Let us scale all three dimensions - depth, width, and input resolution - at the same time, using a compound formula, so the growth is efficient and balanced."
+
+Why EfficientNet uses compound scaling
+Traditional CNNs are scaled up to improve accuracy - by adding more layers (depth), more channels (width), or using higher-resolution images. But this is often done manually and inconsistently, requiring extensive trial and error with only modest gains.
+EfficientNet solves this by introducing compound scaling - a method that scales depth, width, and resolution together using a single factor. This leads to better accuracy and efficiency without increasing model size unnecessarily.
+🤖 EfficientNet-B0:
+Base model discovered via Neural Architecture Search (NAS)
+Scaled up to EfficientNet-B1 through B7 using the compound scaling formula
+🌎 Highlights:
+Beats ResNet and DenseNet in accuracy with fewer parameters
+Extremely efficient and accurate
+Excellent for mobile, edge, and real-time applications
+
+
+lecture-16 (NAS_NET)
+---------------------
+so far, we have discussed about hand-crafted neural networks (MADE BY HUMANS) but what if we
+design an algorithm that can design a neural network architecture all by itself!
+
+a team of google brain asked a question "what if we let a neural network design another neural network?"
+
+Neural Architecture Search
+
+
+NASNet - When Neural Networks Started Designing Themselves
+Computer Vision from Scratch
+
+
+The manual era of CNNs
+
+Let us rewind to 2012.
+AlexNet had just won the ImageNet competition, shocking the world with deep learning's capabilities.
+
+Soon after, architectures like VGG, Inception, and ResNet took over - each deeper, wider, more sophisticated than the last.
+
+But here was the catch:
+Every one of these architectures was hand-crafted by researchers, using intuition, experience, and a lot of trial-and-error.
+
+Designing a neural network architecture was like crafting a delicate machine - a few wrong tweaks and the performance would collapse.
+
+
+The bold Idea at Google brain
+In 2017, a team at Google Brain, led by Barret Zoph and Quoc Le, asked a radical question:
+"What if we let a neural network design another neural network?"
+Instead of coding the architecture ourselves, what if we trained a controller model - an RNN - to search through the space of possible architectures and figure out what works best?
+
+This was the birth of NASNet - Neural Architecture Search Network.
+
+
+
+Let us take a pledge to finish what we started
+
+
+How NASNet Works
+Google trained a controller RNN that generates descriptions of architectures (called cells).
+
+Each architecture was then trained and evaluated on CIFAR-10.
+
+The validation accuracy was used as the reward for the controller.
+The controller was updated using reinforcement learning to generate better architectures in future rounds.
+
+NASNet is like giving a child Legos and asking them to build a castle. The better their creation, the more praise they get - and they learn what works over time.
+
+
+Neural Architecture Search
+
+NASNet in 3 Steps
+
+Step 1: Use an RNN Controller
+Think of an RNN as an "architecture generator." It creates possible CNN designs by choosing operations like:
+3×3 conv
+5×5 conv
+max pooling
+identity (skip)
+where to connect which layers
+
+This RNN generates small building blocks called cells.
+This process is very expensive - Google's search used:
+500 GPUs for 4 days
+Thousands of architecture evaluations
+But once the best cell is found, it can be reused in many settings.
+
+
+
+Two Types of Cells:
+Normal Cell: Keeps the spatial dimensions the same
+Reduction Cell: Reduces the size (like pooling)
+
+Step 2: Try and Train
+Each generated cell is turned into a small CNN and trained on a small dataset (e.g. CIFAR-10).
+
+
+After training, we evaluate its accuracy.
+
+
+That accuracy becomes the reward for the RNN.
+Using reinforcement learning, the RNN improves its architecture generation over time.
+
+Step 3: Build the Full NASNet
+Once the best-performing cells are found:
+They are stacked multiple times to build the full network
+This is done for large datasets like ImageNet
+Why not just use 3×3 conv everywhere?
+Because:
+The NASNet search found that mixing operations like 1×1 conv, depthwise conv, skip connections, pooling, and 5×5 sep conv gave better results for both accuracy and efficiency.
+
+
+
+lecture-17
+-------------
+A hystorical Journey Through CNN's and modern computer vision (2010 to 2025)
+ 
+
+🏛️ Influential Research and Conferences
+Top conferences: CVPR, ICCV, ECCV, NeurIPS, ICLR
+
+check the video please
+
+Top journals: JMLR, IEEE TPAMI, IJCV
+
+
+
+
+Lecture-18   Vision-Transformers
+---------------------------------
+
+what are some features of CNN that led to its problems? they are locality, translation invariance and weight-sharing
+
+
+timestamp of the videos (will note description later)
+5:38, 12:52, 15:45, 36:08, 45:00(very good intuition of multihead attention has been given), 1:05:41, 1:15:38
+
+
+CNN's are known to have something called as inductive bias. (which vision transformers aim to solve)
+what is receptive field? how much of an area of an image that you are actually looking at once.
+
+
+how is the positional embedding vectors created which looks like token embeddings vector
+
+key, query and value 3 parameters are used for calculating the attention
+
+why does gpt predict different next work for the same query (most of the times)?
+
+
+in vision transformer cls(an additionaltoken with image input data) token(aka patch) helps to perform the classification part
+
+
+some challenges of using Vit's:
+they need a lot of data to match CNN level performance
+they might overfit on small data
+
+
+solution can be to leverage pretrained vit
+leverage
+data augmentation, regularization, knowledge distillation etc
+
+
+applications of Vit's beyond classification:
+----------------------------------------------
+-> semantic segmentation (Segformer, Setr)
+
+-> Object Detection (VitDet, Detr)
+
+-> Video Classification (TimesFormer)
+
+-> multi-modal models (CLIP, Flamingo, GPT-4V)
