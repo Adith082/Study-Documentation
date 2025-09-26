@@ -1,3 +1,6 @@
+(Notes from vizuara computer vision lecture series videos)
+
+
 -> convolution operation can learn a lot of spatial dimensional data.
 
 
@@ -891,3 +894,270 @@ applications of Vit's beyond classification:
 -> Video Classification (TimesFormer)
 
 -> multi-modal models (CLIP, Flamingo, GPT-4V)
+
+
+lecture-19 coding a vision transformer from scratch in pytorch
+---------------------------------------------------------------
+important note from chatgpt: In a Vision Transformer (ViT) (and Transformers in general), the encoder layers (say there are 
+𝐿
+L layers) are applied sequentially, not in parallel.
+
+
+but each multi-head attention works paralleli for each of those encoder or decoder blocks
+
+
+
+note: in the original attention is all you need paper, the position embedding was not a learnable parameter (it was more of a sin, cosin function).
+but in several other transformer architecture, the position embedding was learnable parameter
+
+
+
+note from chatgpt: GELU activation function is used in MLPs of Transformers because it provides smoother nonlinearity, avoids dead neurons, improves gradient flow, and empirically boosts performance — making it better suited for high-capacity models dealing with complex patterns like text or images.
+
+
+VIT classification in a nutshell,
+
+#part 1 patch embedding
+
+
+#part 2 transformer encoder
+# layer normalization
+# multi-head-attention
+# residual (skip connection) add embedded patches (before layer norm) to multi-head-attention output
+# layer normalization
+# Multi-layer-perceptron
+# residual (add previous residual output) to previous MLP output
+# final output will get injected to next transformer encoder block ... and so on and so forth
+
+
+#part 3 
+# MLP head, for classification
+
+
+
+note: a technical concept in pytorch: 
+
+lecture-20: Hands-on Computer-Vision Boot=camp
+-------------------------------------------------
+
+If you are serious about Computer vision, just go to OPEN-CV
+please checkout the openCV courses. Thank me later!
+
+what are the most common image tasks done in computer vision?
+-> classification, object detection, segmentation, pose-estimation, object-tracking, object-counting, traditional-Computer-Vision techniques, end-to-end-CV-pipeline (using Roboflow)
+
+
+
+R-CNN (object detection), YOLO (faster object detection and tracking), U-Net (semantic segmentation)
+
+
+the computer vision you know is just the tip of the ice-berg. (there are so many applications in the industry happening in the background. we only see customer facing applications)
+
+several applications such as in healhcare, transportation, security survellience, sports, entertainment media, agriculture, finance and banking, e-commerce, food, education, geospatial
+analysis and many more. checkout this path to learn more about the applications \Documentation of Study\Documenting_what_I_hear\images
+
+does self-driving car uses vision transformer with mixture of experts for vision (elon musk said so)?
+
+
+
+note:
+------
+A virtual environment in Python is like a sandbox that keeps the dependencies (libraries, packages, and even Python versions) of your project isolated from everything else on your system.
+
+Here’s why it’s useful:
+
+Dependency isolation
+
+Different projects may need different versions of the same package.
+
+Example: Project A needs Django 3.x, while Project B needs Django 5.x. Without isolation, installing one version could break the other.
+
+Avoid polluting system Python
+
+If you install packages globally, your system Python environment gets messy and can conflict with system tools or other projects.
+
+Virtual environments keep your global Python clean.
+
+Reproducibility
+
+You can lock your project’s dependencies (with requirements.txt or pyproject.toml) so others can recreate the same environment and avoid “works on my machine” issues.
+
+Portability & Deployment
+
+Virtual environments let you package the exact versions of dependencies so deployment to servers (or containers) is smoother.
+
+Experimentation
+
+You can quickly create a throwaway environment, test something, and delete it without affecting your main setup.
+
+
+
+
+what is a contour in computer vision?
+
+
+
+lecture-21
+------------
+
+how do we track an object frame to frame? (by tracking and annotating)
+
+
+we will be using YOLOV8 pretrained model (pretrained on COCO dataset)
+
+` How an object is tracked in YOLOv8?
+by utilizing Iou or (intersection over Union) 
+(for example if for two consecutive frames, IoU is >=0.5 and classId matches with previous frames classId then track that object)
+
+
+
+(for videos where object moves so fast, this tracking would be very difficult in that case)
+would it also happen that two object might have same tracking id? (if the frame rate is very high? (not sure check on internet))
+
+
+
+lecture 22
+--------------
+R-CNN, Fast R-CNN and Faster R-CNN (usually for object detection(bounding boxes)) and Mask R-CNN used for image-segmentation
+R means (regions)
+
+important video time stamps: 2:57, 28:08, 32:00
+
+
+how would you do an object detection task from scratch?
+find all possible boxes of an image and classify with a CNN to identidy whether the respective object exists or not. (complexity huge)
+
+
+another a little bit efficent approach, using proposal regions.
+instead of looking for all possible regions, you somehow find a limited number of proposed regions(using selective search (a hand crafted rigid algorithm)) which has higher likelyhood of finding the object (R) and apply classification (using CNN)
+to find the final answer. That is how R-CNN works. 
+
+now the main question is how these proposed regions are picked? using hand-crafted algorithms
+
+
+
+
+(additional note: is there anything available as R-Transformer, Fast R-Transformer, Faster R-Transformer etc.?)
+
+
+all of the modern object detection algorithms are a variant of faster R-CNN
+
+what did fast R-CNN do different than R-CNN? processed just the only one whole image (instead of processing possible proposed regions) and maps the feature map of the whole image to those possible (handcrafted) proposed regions
+
+what about faster R-CNN?
+faster R-CNN introduced region proposal network (no need for handcrafted selection algorithm) which is a NN introduced after applying pretrained
+backbone CNN (when we get feature maps). That feature map is input to the RPN(a NN that proposes regions) after which I get region proposals then the rest is same as fast-RCNN.
+
+
+Lecture 23: Mask R-CNN (for instance segmentation)
+
+difference between Faster R-CNN and Mask R-CNN is that in Mask R-CNN we have RoI-Align instead of RoI pooling.
+and also Mask R-CNN has an additional mask-head that provides the segmentation
+
+how does masking head work?
+
+
+
+
+
+how do you go from smaller dimension(feature map) to larger dimension(output)? (during convolution)
+using deconvolution or transpose of a convolution
+
+convolution layer learns "there is a car like pattern here" (low resolution (feature map)) and transposed convolution learns
+when I see a car pattern, I should create this specific pixel pattern (high resolution (mask pattern))
+
+RoI align vs RoI pooling?
+
+in RoI pooling, we sometimes do not get information from some parts of the region of interest, eventually leading to inaccurate bounding box.
+
+RoI align came to the picture to solve the problem using interpolation which allows to partly consider pixels that might not have been considered in ROI pooling
+
+
+lecture 24: U-Net (for semantic segmentation (Unet can perform only semantic segmentation))
+started as biomedical imaging application but now it can also be called the backbone of diffusion models!
+
+-> what is instance segmentation? identify its use cases 
+-> what is semantic segmentation? identify its use cases
+
+
+U-Net is much more Eelegant? why? find out
+
+
+U-Net(paper got 118k citations) can be divided into 4 parts: these are respectively known as encoder, decoder, bottleNeck and skip-connections
+
+encoder can be divided into 4 levels.
+then we go to bottleneck. bottleneck is the part where encoder transforms into decoder.
+
+a 512by512 image of 1 channel goes through the encoder part and moves to the bottleneck part to produce a 28by28 image(or feature map) of 1024 channel. (how does the size gets reduced and channel increased? by utilizing maxpooling, 3by3 filter(no padding involved))
+
+but how does the deocder increases this spatial size to produce semantice segmentation of that 28by28by1024?:using bilinear interpolation(probably that is what up-convolution operation does)
+
+is the skip connection in resNet different from what is implemented in U-Net(yes, in U-Net we concatenate but in (resNet and also in transforers we add))? where(encoder level ---> decoder) does this skip connection is applied in U-Net?
+
+
+when concatenating in skip connection, U-Net encoder crops. (can we concate without croping? (a question to explore further))
+
+the final segmentation output in U-Net is 388by388by2(which is rescaled into original image dimention). here why 2 channels(one for background and another for class)?
+
+what would be the ground truth for semantic segmentation?
+classname and the segmentation mask
+what would be the loss function? how will it be measured?
+loss = (pixel level(all pixel comparison check) + object alignment(actual-object pixel match check))/2
+
+
+applications of U-Net in GenAI:
+-> stable diffusion (for de-noising)
+-> dallE-2
+-> audio source separation
+-> video diffusion
+
+
+try implementing Unet on
+
+satelite imaging, biomedical imaging, industrial pipeline, arial-image, self-driving
+
+lecture-25: Variants of U-Net
+------------------------------
+U-Net++,  
+
+residual-U-Net,
+
+Attention(for filtering out the features coming from the skip connection for relevance)-U-Net
+
+
+special note: try to create projects (use rare datasets if possible), host dataset, model and inference on hugging face pls.
+
+
+lecture-26: YOLO (for real time object detection(speed(realtime) without too much compromising on the accuracy))
+------------------
+
+
+for YOLO, just one forward pass is enough!!
+
+
+any deep learning problem solution, you must be able to come up to answer the 5 points below which ensures your understanding for the problem and solution
+-> input
+-> NN architecture
+-> output
+-> ground truth
+-> loss
+
+so for realtime object detection in YOLO we need to know the above 5 points answers
+
+
+the main idea in YOLO is that you divide the image into certain number of grids.
+every grid cell makes two types of predictions. one is class probability map and another one is bounding boxes+confidence
+for every single cell,
+pclass = [] probability of all classes that could exist in the image
+boundrybox = [] coordinate of boundary box(approximate) with its confidence score
+you can predict multiple bounding boxes for each grid
+
+every grid will be responsible for only one object presenting in the image.
+
+the original YOLO architecture allowed predicting 2 bounding boxes per grid cell.
+
+how is the confidence score calculated? by multiplying Iou with probability(object) 
+
+loss = loss of class + loss of localization (bounding box  +  confidence(object, not class))
+
+small bounding box mistakes should be penalizing more thatn big bounding box mistakes

@@ -1,0 +1,53 @@
+-> peer review is not always fair!
+
+-> the paper you think is the best("lots of unique ideas surely it has to be the best") may not be best in the eyes of peer reviewers(clear simple message).
+
+-> have co-authors (specially good mentors), it will help you avoid burnout, give fresh perspectives.
+
+
+-> you are only treated as good as your last paper.
+
+
+how to find research gaps quickly and efficiently?
+
+->go to google scholar
+
+-> find recent research gaps (not older)
+
+-> in the search bar, go for recent (2-3 years old papers search by relevancy 
+(dont just always look at review papers because that would call out even older papers))
+
+-> look for top conference , journal papers(with high citations) (like CVPR, nature etc.)
+
+-> go straight to the study limitations (or might be in the discussion) section where future research, work limitations, weaknesses etc. will be mentioned.
+
+-> out of all the gaps, try to find the one that can be a "low hanging fruit" as well as the most important gaps you think that need to be addressed
+
+-> there can be several types of gaps such as 
+       --> methological gap or evidence gap
+       --> population gap 
+
+-> you may collect bunch of these gaps, but it is important to find important, feasible ones
+and the ones that you could actually address in your convenient time. so for that, you could
+communicate with your mentors about these gaps and have clear idea to execute your work further.
+
+-> take a more systematic approach yourself. do systematic review, write systematic review 
+papers(set agenda for future works) and publish that paper in top journal!
+
+-> use gpt (but be careful too!)
+prompt example: "I am an early career researcher looking for research gaps that are feasible to address in a short period of time
+and publish in high impact journals. can you identify a series of gaps in research on "covid vaccine hesitancy(the topic)"?"
+
+
+
+
+** the secret to finding a winning research topic!
+
+
+
+
+
+
+
+
+

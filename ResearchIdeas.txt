@@ -28,3 +28,7 @@ and somehow judge them to calculate which language is mostly adapted by the llm
 
 
 #11 quadratic dilated convolutional neural network?
+
+
+#12 Robot Referee? a robot that analyzes live gameplay. (example: predicts foul (ex: in football, provides description why its a red or yellow card
+ by analyzing the environments (ex: player behaviour)))

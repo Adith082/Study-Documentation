@@ -1,0 +1,19 @@
+object detection is a deeplearning task that involves both regression( bounding box) and classification (class-label)!
+
+in deep learning we solve problems based on neural networks and differentiable programming
+
+
+in NN lets say node node A and node B has direct connection(edge)
+
+this edge weight if its positive then A excites B. but if edge weight is negative, then node A and node B has inhibitory relation ship
+
+
+we need gradients, so for that we need to differentiate our neural networks activations
+
+if we want to use gradients to train the neural network, we need an activation function with nicer derivatives!
+
+example of smooth better activation function can be sigmoid 1/(1 + e^-x)
+
+
+a lot of this idea we'll see for training a neural network also apply more broadly!
+this leads us to the idea of differentiable programming.

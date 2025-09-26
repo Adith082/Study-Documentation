@@ -1,0 +1,123 @@
+
+Book important notes
+
+using tensorboard to monitor training
+
+ Chapter 12 explores and implements standard performance metrics and uses
+ those metrics to identify weaknesses in the training done previously We then mitigate
+ those flaws with an improved training set that uses data balancing and augmentation.
+
+
+Part 3 is a single chapter on deployment. Chapter 15 provides an overview of how to
+ deploy PyTorch models to a simple web service, embed them in a C++ program, or
+ bring them to a mobile phone
+
+end, Grokking Deep Learning (www.manning.com/books/grokking-deep-learning) is a
+ great resource for developing a strong mental model and intuition about the mechanism
+ underlying deep neural networks. For a thorough introduction and reference, we direct
+ you to Deep Learning by Goodfellow et al. (www.deeplearningbook.org). A
+
+
+GANs in Action  
+Deep learning with Generative Adversarial Networks
+7 reviews
+Jakub Langr and Vladimir Bok
+September 2019  ISBN 9781617295560  240 pages
+printed in black & white
+Available translations: Complex Chinese, Japanese, Korean, Russian, Simplified Chinese
+
+
+
+
+Almost all of our example notebooks contain the following boilerplate in the first cell
+ (some lines may be missing in early chapters), which we skip including in the book
+ after this point:
+ # In[1]:
+ %matplotlib inline
+ from matplotlib import pyplot as plt
+ import numpy as np
+ import torch
+ import torch.nn as nn
+ import torch.nn.functional as F
+ import torch.optim as optim
+ torch.set_printoptions(edgeitems=2)
+ torch.manual_seed(123)
+
+
+
+
+ Eli Stevens has spent the majority of his career working at startups in Silicon Valley,
+ with roles ranging from software engineer (making enterprise networking appliances)
+ to CTO (developing software for radiation oncology). At publication, he is working
+ on machine learning in the self-driving-car industry.
+
+
+Luca Antiga, Thomas Viehmann
+
+
+Chapter 5 unveils how a program can learn
+ from examples and how PyTorch supports this process.
+
+
+
+chapter1 covers,
+ How deep learning changes our approach to 
+machine learning
+  Understanding why PyTorch is a good fit for deep 
+learning
+  Examining a typical deep learning project
+
+
+
+
+
+disingenuous? what is th words meaning?
+conflate? what is the words meaning?
+
+Rather, we’ve discovered a general class of algorithms
+ 3
+4
+ CHAPTER 1 Introducing deep learning and the PyTorch Library
+ that are able to approximate complicated, nonlinear processes very, very effectively,
+ which we can use to automate tasks that were previously limited to humans.
+
+
+
+Edsger W. Dijkstra found that the question of whether machines could
+ think was “about as relevant as the question of whether Submarines Can Swim.”1
+
+
+
+ That general class of algorithms we’re talking about falls under the AI subcategory
+ of deep learning, which deals with training mathematical entities named deep neural net
+works by presenting instructive examples.
+
+
+
+
+
+Until the last decade, the broader class of systems
+that fell under the label machine learning relied heavily on feature engineering.
+
+
+
+what makes deep learning so powerful?
+the ability of a neural network to ingest data and extract useful
+representations on the basis of examples is what makes deep learning so powerful.
+
+ The focus of deep learning practitioners is not so much on handcrafting those repre
+sentations, but on operating on a mathematical entity so that it discovers representa
+tions from the training data autonomously
+Often, these automatically created
+ features are better than those that are handcrafted!
+
+
+pytorch hub
+zebra rodeo?
+
+learning how to run a pretrained model using pytorch is  a useful skill.
+
+imagenet (maintained by standford university), wordNet (a large lexical db of English language(maintained by priinceton university))
+
+
+
