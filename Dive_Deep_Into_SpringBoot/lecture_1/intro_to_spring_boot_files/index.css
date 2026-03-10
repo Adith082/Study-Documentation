@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"/><meta name="viewport" content="initial-scale=1" /><meta http-equiv="X-UA-Compatible" content="IE=11;IE12;IE=edge" /><link rel="icon" href="/public/favicon.ico" type="image/x-icon" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"><title>Notebook</title><link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"><!-- Common CSS file -->
+<!-- <link rel="stylesheet" type="text/css" href="/public/index.css"><link rel="stylesheet" type="text/css" href="/public/vendor/bootstrap/css/bootstrap.min.css"><link rel="stylesheet" type="text/css" href="/public/consolidated_files/css/initial_load_css.css">-->
+<!-- Common CSS file -->
+<style>
+body {
+font-family: 'Puvi';
+background-color: #F7F7F7
+}
+@font-face {
+font-family:"Puvi";
+font-style:normal;
+src: url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family:"Puvi-Bold";
+font-style:normal;
+src: url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Bold.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+</style>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"><script>var currentLocation = window.location.host;
+if(currentLocation.indexOf('zoho.') > -1) {			
+var newLocation = currentLocation.replace('zoho', 'zohopublic');			
+window.location = window.location.href.replace(currentLocation, newLocation);			
+}
+var scriptsAsync = [
+'index.css', //no i18N
+'/public/vendor/bootstrap/css/bootstrap.min.css',//No I18N
+'/public/consolidated_files/css/initial_load_css.css'//No I18N
+];
+scriptsAsync.forEach(function(fileName) {
+insertFile(fileName, false);
+});
+function insertFile(fileName, isSync, id) {
+if(fileName.indexOf('.css') !== -1){
+var link = document.createElement('link');
+link.href = fileName;
+link.rel = 'stylesheet';
+link.crossorigin = "";
+if(id) {
+link.id = id;
+}
+document.head.appendChild(link);
+} else {
+var script = document.createElement('script');
+script.src = fileName;
+script.charset = "UTF-8";   //No I18N
+script.crossorigin = "";
+if(isSync) {
+script.async = false;
+}
+document.head.appendChild(script);
+if(script.src.includes("lyte-es5")){
+script.onload = (function () {
+insertFile(getCdnPath('consolidated_files/initial_load.js'));//No I18N
+});
+} else if(script.src.includes("initial_load")){
+script.onload = (function () {
+Lyte.Router.init();
+});
+}	
+}
+}
+function removeFile(id, delay) {
+delay = (delay) ? delay : 0;
+setTimeout(function() {
+if(elem = document.getElementById(id)) {
+elem.parentNode.removeChild(elem)
+}
+}, delay);
+}</script><script src="/public/bower_components/lyte/custom-elements-es5-adapter.js"></script><script src="/public/bower_components/lyte/polyfill-bundle.js"></script><script src="/public/bower_components/lyte/lyte-es5.min.js"></script><!-- <script src="/public/vendor/security/security.min.js"></script>-->
+<script src="/public/vendor/jquery/jquery-2.0.3.min.js"></script><script src="/public/vendor/waveSurfer/wavesurfer.min.js"></script><script src="/public/consolidated_files/initial_load.js"></script></head><body><div id='outlet'></div></body></html>

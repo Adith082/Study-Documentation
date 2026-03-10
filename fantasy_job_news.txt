@@ -1,0 +1,83 @@
+####1      
+
+
+ASR Header
+Job Description
+Location: Thorp Arch, Leeds LS23
+
+Reports to: Performance
+
+Application Deadline: 10th October 2025
+
+Join the Team Behind the Team
+
+At Leeds United, we know that success on the pitch starts with strength behind the scenes. We are seeking a highly motivated Data Analyst to support performance, tactical, and strategic decision-making. You will work closely with coaching staff, performance scientists, and recruitment departments to deliver actionable insights through data analysis, visualization, and predictive modelling.
+
+This is a key role in driving a data-informed culture throughout the organisation to optimise player performance, game strategies, and long-term planning.
+
+————————————————————————————————————–
+
+What You’ll Be Doing
+
+This role puts you at the centre of collaboration, innovation, and impact, turning complex data into clear, actionable solutions. If you’re passionate about storytelling through data and eager to make an impact on pitch performance, then this role could be your next career move.
+
+Key Responsibilities:
+
+Performance & Tactical Analysis
+
+Analyse match, training, and physical data (e.g., GPS, event data, tracking data) to identify trends and insights.
+
+Deliver concise reports and dashboards to coaching staff to support tactical decisions.
+
+Support live and post-match analysis workflows with data-driven insights.
+
+Data Management & Integration
+
+Collect, clean, and integrate data from various sources (e.g., GPS, wearables, match footage, scouting platforms).
+
+Maintain and improve the integrity of the club’s central data ecosystem.
+
+Modelling & Predictive Analytics
+
+Develop models to assess player performance, injury risk, and tactical behaviours.
+
+Contribute to long-term research projects such as player load monitoring, opposition profiling, and win probability models.
+
+—————————————————————————————————–
+
+What We’re Looking For
+
+We’re looking for someone proactive, personable, and who thrives in a busy environment.
+
+You’ll ideally have:
+
+Bachelor’s or Master’s degree in Data Science, Statistics, Sports Science, Computer Science, or related field.
+
+Strong proficiency in Python and/or R, and SQL for data manipulation and analysis.
+
+Experience with data visualization tools (e.g., Tableau, Power BI, or custom Python dashboards).
+
+Experience working with tracking data (e.g., Second Spectrum, Stats Perform) or event data (e.g., Opta, StatsBomb).
+
+Excellent communication skills with the ability to present findings to technical and non-technical audiences.
+
+Preferred Experience
+
+Prior work experience with a professional sports team or elite athlete environment.
+
+Familiarity with machine learning, Bayesian statistics, or player clustering techniques.
+
+Understanding of sports performance technologies (e.g., Catapult, GPSports, Kinduct, Kitman Labs).
+
+Knowledge of applied sports science, injury prevention, and training periodisation.
+
+————————————————————————————————————–
+
+Why Should You Join Leeds United?
+
+Whether you are on the pitch or behind the scenes here, we’re united by passion, pride, and a drive to always improve. You’ll be joining a supportive people team where your voice is valued and your development matters.
+
+In return for your dedication, you’ll receive a highly competitive salary package and pension scheme, along with a wide range of exciting perks and benefits.
+
+
+####2

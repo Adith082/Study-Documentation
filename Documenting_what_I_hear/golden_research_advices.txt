@@ -42,12 +42,191 @@ and publish in high impact journals. can you identify a series of gaps in resear
 
 
 ** the secret to finding a winning research topic!
+use convergence method
+there are 3 dimensions to optimize yourself,
+feasibility, my passion, debate itself
+
+connecting adjacent topics
+--------------------------
+example: connect your choice of topic to climate change, covid, social inequalities, different geographical area(model performance different, any unique attributes between different geographical location data, why they are different? ..... based on different context such as healthcare, media forensics, etc)
+
+
+op-eds in NYtimes, wallstreet journals look at them to identify the debate! you might find your topic.
+
+researcher has the power to problematize!
+
+go deeper into the op-eds debate by leveraging your research skills!
+
+**forcast the impact of your debate
+ observe past performing of a reseach area to forcast what can happen future.
+
+
+a Harvard professors advice: always go for low hanging fruits first!. you will advance in career for sure.
+
+
+an example of connecting adjacent topics,
+suppose a topic is about migrants access. some one could combine another high impact topic with it for example covid
+which would seem like "covid access migrant" and start from systematic review related to the topic.
+
+
+another example. lets say someone is interested in "universal health coverage"
+he/she searches articles related to the topic on google scholar. finds a little deeper topic(from the previous searches) like "catastrophic health expenditures" 
+
+
+** how to read research papers effectively?
+---------------------------------------------
+
+-> the triple pass method:
+
+understand your why? why are you reading this paper? because the reason is gonna shape the type of reading you will be doing.
+is it for literature review, for general knowledge, for making a point for writing ... etc.
+
+there are 3 ways of reading.
+
+always remember, experts read for the gist
+1. birds eye view. (just skim through the paper (abstract, title, conclusion ... (not mathematical equations .....)) and get the jist before you dive deep. thats what experts do first.)
+
+2. the swoop method: try to swoop and find what is the debate? what are the main research questions? what methods did they used? what did they find? what are the main conclusions? (usually takes 3-5 minutes!) you dont have to read start to finish !! cause its a waste of time isn't it?
+so try to be an expert of swooping because thats what you should do for majority of the papers that you read!
+
+3. the "rubber duck" method. (explain a novice so you get clarity whether you are right or there is something wrong)
+
+
+Save thousands of hours with the following academic reading method!
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+1.birds eye view (95% of the times! just skip through introduction and abstract to understand what the authors did and what was the result?)
+even before that, try to realize do you actually need to read the paper or is the article actually even relevant for me to read right now?
+
+2. in swoop method (3-5% of the time) lets say you are trying to do a literature review and so you need to understand different methods that were
+employed by different papers. so you directly move to the methods section and extract the critical information from the method.
+
+
+3. the 1% time when  comprehensively go through the whole paper and able to implement and also which is very much relatable
+with your idea. Moreover, you do the same thing while peer reviewing too.
+
+
+systematic review challenges
+----------------------------
+-----------------------------
+
+we will tackle challenges focusing on
+public health and medicine
+
+what is a scoping review, literature review?
+
+literature review is reproducible.
+
+you need to have access to a database of literature. not just a search engine.
+
+example of these databases are respectively web of science, ProQuest, pubmed, ebscohost etc.
+for most of you to publish, you need at least 2 database access( from reviewers)
+
+can you do a systematic literature review by only using google scholar(which is not a reproducible engine.)? the answer is no!! you can't
+you might be able to use google scholar as a chapter of your PhD.
+
+to do a systematic review, you need a reference manager which is a must need tool!
+a free reference manager tool you can use is 'Zotero'
+
+Steps to do Systematic review
+week1. Define your topic (
+
+it is incredibly important. do you know why top university students get good at phd? its because their supervisors are at the center
+of debate in their own respective field. their supervisors shape their phd students path right from the very beginning by directing them 
+to a very good topic. because if topic is not good, then down the future, students will suffer for sure. so the real question is
+how do you define a very good topic by yourself?
+
+)
+
+week2. define your keywords (very important for your review to be reproducible. (because you don't want your search keywords to produce different outputs every time you search right?))
+
+week3. set inclusion, exclusion boundaries (which paper to pick, which not to pick for systematic literature review)
+
+week4. Analysing Data ( the most exciting part!!).
+
+week5. Writing Up! (remember you start writing up from week 5. not at the very beginning right away)
+
+week6. Publish!
+
+how an example of a topic might look like?
+bigdata? no no, thats too big of a topic isn't it?
+
+make something like X-->Y (link to something)
+how about climate migration and health     (climate migration -------> health) maybe change it to (climate change ---> mental health!)
+
+you try to pick a topic that has >30 publications but not as high as thousands of publications. there is no point in doing a systematic
+review if the topic that you pick has very few publications because there is not much knowledge out there at all. Also you don't wanna spend
+infinite time on a topic that has infinite number of publications if you know what I mean, right? but it is always better to have more publications
+on a topic than very few because you could always filter out the irrelevant ones. I hope you get my point.
+
+so climate change ---> mental health (its always good to convert your topic to a sentence: "the impact of climate change on mental health")
+
+another example of a topic can be "micro-plastic Pollution" an exploratory topic but you have got to link it to something.
+
+
+you need to make sure that you use the convergence technique for finding your topic.
+what is convergence technique? the intersection of feasibility, debate and passion.
+always make sure you have passion for your topic, make sure your topic has feasibility aka it can be solvable with in a convenient time frame (for phd students within 2 years) and make sure your topic heavily being debated currently, recently (look at citation rates for topic, op-eds, magazines, do normal people understand your topic) a lot of brilliant phd students struggle later due to not picking the right topic in the first place where mediocers can actually find good topic to become a great scholar later!
+
+
+remember, if your topic is very hot then you better run hurry because your ideas might collide with someone else.
+
+scoping( aka exploratory ) review is different than systematic review. always try to do systematic review unless your advisor asks for a scoping review.
+
+using the pico method we can propose a well define topic
+pico method
+
+P --> population (ex: patient,)
+I --> Intervention (ex: Exposure, ) the X of X--->Y
+C --> Comparison
+O --> Outcome (Y)
+optional T ---> Timeframe / typed analysis
+
+your homework:
+use convergence method, forecast-impact (using google scholar), use PICO to make a sentence from your topic
+
+
+In short: A systematic review doesn’t just summarize; it collects, evaluates, compares, and synthesizes research to give the most reliable evidence available on a question.
+
+in short:
+A literature review tells you what has been studied.
+A systematic review tells you what the evidence actually says, how reliable it is, and where the gaps are.
+
+
+Systematic Review vs. Literature Review
+Aspect	Systematic Review 🧩	Literature Review 📚
+Purpose	Provides the best available evidence to answer a specific research question	Provides an overview/background of a topic
+Research Question	Narrow, focused, well-defined	Broad, general, exploratory
+Search Strategy	Exhaustive, predefined, covers multiple databases	Selective, depends on author’s choices
+Study Selection	Strict inclusion/exclusion criteria, documented	Chosen at author’s discretion
+Quality Assessment	Critically appraises study validity and bias	Rarely assesses quality systematically
+Evidence Synthesis	Structured, may include meta-analysis	Narrative/thematic, descriptive only
+Reproducibility	Transparent, reproducible step by step	Subjective, hard to reproduce
+Outcome	Evidence-based conclusions, identifies research gaps, informs policy/practice	General understanding, context, and trends
+Usefulness	High for decision-making, guidelines, policy	Good for learning background, theory, and research directions
+
+week2
+-----
+------
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 

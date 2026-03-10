@@ -32,3 +32,38 @@ and somehow judge them to calculate which language is mostly adapted by the llm
 
 #12 Robot Referee? a robot that analyzes live gameplay. (example: predicts foul (ex: in football, provides description why its a red or yellow card
  by analyzing the environments (ex: player behaviour)))
+
+
+
+#13 clickbait image detection (focusing on any narrow domain: English premier league related video thumbnails, )
+may be to further increase
+
+
+
+#14** different geographical area(model performance different, any unique attributes between different geographical location data, why they are different? ..... based on different context such as healthcare, media forensics, etc)
+
+
+
+#15** working alongside Premiership football clubs, locally and across the country for performance analysis and injury prevention strategies
+
+
+#16 ***providing cardiac screening and investigating the cardiovascular health of athletes
+
+
+# analyzing crop health of regions of two or more countries along the border (to identify why (crop-health dissimilarity))
+
+
+#17 Furthermore, the
+ principle of information bottleneck (IB) has been
+ used for explainable learning in the time series do
+main (Feng et al., 2024a; Liu et al., 2024e). Given
+ that weather data inherently constitute time series,
+ we advocate exploring how the information bot
+tleneck method can enhance the explainability of
+ weather modeling. 
+
+#18 Time series forecasting has become an increasingly popular research area due to its critical applica
+tions in various real-world domains such as traffic management, weather prediction, and financial
+ analysis
+
+

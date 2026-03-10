@@ -17,3 +17,18 @@ example of smooth better activation function can be sigmoid 1/(1 + e^-x)
 
 a lot of this idea we'll see for training a neural network also apply more broadly!
 this leads us to the idea of differentiable programming.
+
+
+
+Deep learning pre-requisites
+-------------------------------------
+
+data structures, linear algebra, multivariable  calculus
+
+
+
+Suggested linear algebra playlist: https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
+Key videos: 1, 3, 4, 5, 8, 9, 13
+
+Suggested multi-variable calculus playlist: http://youtube.com/watch?v=TrcCbdWwCBc&list=PLSQl0a2vh4HC5feHa6Rc5c0wbRTx56nF7
+Key videos: 15, 16, 17, 19, 20, 24, 30, 31, 32
