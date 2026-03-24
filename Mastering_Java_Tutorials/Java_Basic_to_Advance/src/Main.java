@@ -36,6 +36,9 @@ public class Main {
         Integer vol_ = 5;
         System.out.println(val_.equals(vol_));
         Main.print_();
+
+        Depressed_lad dl = new Depressed_lad();
+        System.out.println("maintain" + dl.maintain);
        // System.out.println(temp_variable);
     }
 
@@ -47,4 +50,6 @@ public class Main {
 
         System.out.println("variable lecture ends");
     }
+
 }
+
