@@ -1,0 +1,53 @@
+
+---
+it's not just the cells that move, but material inside cells can also undergo motion.
+
+
+all of the biological movements are due to the special enzymes called molecular motor proteins which interacts with cytoskeletal tracks
+two types of tracks, one the larger diameter one called microtubules and the other-one called actin filaments
+
+molecular motor examples: myosin (goes through actin track), dynein (goes through microtubule track), kinesin (goes through microtubule track)
+
+these tracks are made of tubulin which are polarized due to which path has minus-end, plus-end. dyenin carries cargo from minues end(peripheral end) to plus-end (centrosom interior of the cell).for kinesin the path way is vice-versa
+
+
+actin(slimmer width than microtubules) filament track: myosin
+-------------------------------------------------------------
+
+actin tends to be more cortical (mane bairer dike) on the other hand microtubule tends to be more interior
+
+
+but these motor proteins that I talked about are famility of many different motor proteins. for example there can be kinesin-1, kinesin-2 ... I hope you get the understanding here!
+
+
+Motor Protein's are actually enzymes!!
+--------------------------------------
+they hydrolyze ATP(is the fuel of majority of protein motors) adenosine tri phosphate
+Hydrolyzing a molecule means using water to break a molecule into smaller pieces by cutting one of its chemical bonds.
+Layman's example: It's like adding water to snip apart a chain into smaller links.
+
+during the ATP hyrolysis cycle(ATP gets decomposed and then gets binded to ATP again) the structure of a protein motor's motor, changes which allows the motor to move further along the track.
+
+/*
+
+taken from chatgpt.
+-------------------
+
+Motor proteins act like molecular delivery trucks inside the cell. They carry cargo to the correct destination instead of letting it drift randomly.
+
+Here are some common examples:
+
+Motor protein	Examples of cargo	Where it transports
+Kinesin	Vesicles, mitochondria, lysosomes, mRNA, proteins	Usually from the cell center toward the cell edge (plus end of microtubules)
+Dynein	Endosomes, damaged organelles, signaling molecules, viruses (which some viruses hijack)	Usually from the cell edge back toward the nucleus (minus end of microtubules)
+Myosin	Secretory vesicles, pigment granules, organelles	Along actin filaments, especially near the cell membrane
+
+*/
+
+compared to car engine, the protein motors are very much efficient in converting energies to productive work 60% vs 10%!! (I believe we have a lot to learn from protein motors motility so we could adapt something I guess!!)
+
+relative to their size, protein motor's are faster than motor car!!
+
+
+
+What do cytoskeletal motor's do in cells?

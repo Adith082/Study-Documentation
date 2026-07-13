@@ -1,0 +1,564 @@
+1 Angstrom = 10^-10 meter
+
+lipid bilayer (a surrounding) equally important as other molecules of life. why?
+
+non-covalent bonding takes places in the water part(75%) of our body 
+
+gene sequence er khub e olpo shonkhok e porobortite protein ready korte kaje dey
+
+hydrophobic and hydrophilic environments
+
+
+every organism divided into water 75%, ions/small molecule, macro-molecules
+
+
+macro-molecules can be divided into lipid (5%), proteins 55%, neucleic acid 10%, carbohydrates 25%
+
+lipids structures are comparatively simple than the rest of the macto-molecules
+
+for bio-systems most of the macro-molecules are made up of only 6 elements (from the periodic table) Hidrogen, Carbon, Nitrogen, Oxygen, Phosphorus, and Sulphur (98%) of the cellular mass.  (THEY LOVE TO MAKE COVALENT(STRONG) BONDS) carbons are not charged in macro-molecules
+find out what are the common states of these elements in macro-molecules
+
+
+what are the typical functional groups that occur in biological molecules
+
+
+
+
+
+Non-Covalent Bondings are more important as we can play more with them than strong covalent bondings
+
+
+what are hydrophobic and hydrophilic environments?
+
+what is lone pair electrons?
+
+examples of non-covalent bonds are electrostatic bonds, hydrogen bonds, hydrophobic (this interactions want to form in water!), van der waals
+focus more on the first 3 (not van der waals)
+
+
+there is a lipid called retinal that binds to opsin protein which contribute to the visual part (by changing shape due to light and sending signals).
+
+
+
+
+
+
+
+********fattyacid (a type of lipid) (trans fatts are harmful to health. major cause of coronary artery diseases) (cis fatts are not).
+trans fats contribute to creating low density lipoproteins binds to cholesterole which sticks to artery and clogs
+|
+
+
+
+
+
+amino-acid, proteins, peptides contain 55% of the total macro-molecules!!
+
+the amino acid's encoded in our protein are known as alpha amino acid's
+
+
+polymer sequence is the order in which the amino acid's appear!
+all the functions of proteins is dictated by the sequence of amino acid's
+gycine, the simplest amino acid with no elaborated side chain (amine + carboxil + sidechain typical amino acids)
+prolin, an unsusual amino acid with cyclical side chain (relates to collagen!)
+cystine, a unique amino acid
+
+when proteins sequences are smaller, they are not capable of adopting too much ordered structure, we mostly call them peptides (2 to 39 += amino acids). proteins (400 to 2000 += amino acids)
+
+the primary sequence defines fold. the fold defines function of the protein
+
+what is condensation reaction?
+
+protein, peptide tertiary structure analogy: noodles with some (bits not cooked(stiffer than the rest of the sequences) part)
+
+
+the process by which you go from an extended primary sequence to a globular structure is called protein folding
+predicting it is a big problem (probably solved by alpha fold now may be but do fact check please) the folded protein needs to have maximum interaction (hydrogen bond or electrostatic interactions) to make sure thermodynamic stability. (tough to predict as the structure gets larger)
+
+primary sequence is based on covalent peptide bonds. but secondary, tertiary and quaternary structures are based on non-covalent interactions
+
+dna doesn't fold. you actually fold protein.
+
+non-covalent forces fold proteins together!!
+
+
+protein folding secondary structure they are formed by hygrogen bonds between amide peptide backbone
+example Alpha-helix, Beta-Sheet, Beta-Turn etc... these combination can form a bit larger protein. for example helix-turn-helix (aka alpha alpha motif)...
+
+secondary structure -> combination of primary structure
+
+tertiary structure -> mixture of secondary structure + all types of non-covalent bonds
+
+quaternary structure -> combination of different tertiary structure (example: hemoglobin, a protein that is responsible for carrying oxygen around in your blood)
+
+different types of protein
+structural proteins (a big example is collagen, it is the most abundant protein in the human body (slight mutation could cause several disease example bone weakening))
+transporters
+enzymes
+receptor proteins
+signaling proteins
+gene regulatory proteins
+membrane transporters
+
+what does de-naturing a protein mean? unfold it's weaker bonds (non-covalent) bonds! it can be done using heat or pH( PH reason :- by changing charge state)
+
+alzheimers disease, mad-cow disease, ...neurological disorders caused by poorly folded or very misfolded proteins!
+
+
+heme is a crucial molecule of hemoglobin check what it does in the internet!
+mechanical change in hemo globin causes diseases
+
+
+
+
+what does being homozygous and heterozygous mean?
+
+
+
+
+
+name of an enzyme last 3 characters are respectively ASE
+
+
+enzyme (gibbs free energy)
+
+
+enzymes are commonly the target of drugs. if we deactivate enzymes then we might mitigate the symptomps of a disease!!
+we inhibit enzymes with small molecules to mitigate diseases!!
+
+what are allosteric inhibitor, allosteric activator? what is their role towards enzyme
+
+
+
+
+
+
+
+
+##################################
+DRUGE DISCOVERY LECTURE BY PROFESSOR ERIC ALM, from MIT
+
+LEARN TARGET DISEASE MOLECULER UNDERPINNINGS, THEN BROAD SEARCH FOR THERAPEUTIC AGENTS
+
+THE FIELD IS INTERDISCEPLINARY.
+
+THERE ARE DIFFERENT TYPES OF DRUGS. PROFESSOR SPECIFICALLY WORKED a lot ON "LIVE THERAPEUTIC AGENTS". Micro-biom based therapies, living organisms as a drug 
+
+there are other types of drugs such as
+-> small molecule drugs (will be talked in this lecture)
+-> cell therapies
+-> biologics
+... etc. 
+
+small molecule drugs (example: aspirin (for pain relief)) 
+they are often designed to interact with specific molecular targets (enzymes, receptors)
+
+
+biologics (not tablets, more like injections)
+(large molecules, typically derived from living cells, ex: proteins or antibodies)
+example: insulin for diabetes, herceptine for breast cancer. highly specific targated action
+
+
+
+Live biotherapeutic agents (a very emerging field!!!) (subfield of biologics)
+medicinal products containing live organisms such as bacteria that are used to prevent, cure and treat disease.
+
+cell therapy (another emerging sub-field of biologics)
+
+
+
+companion diagnostics (an emerging field)
+-------------------------
+
+
+pharmacokinetics
+
+Drug ADME (Absorption, Distribution, Metabolism, Excretion)
+
+blood brain barrier restricts the entry of large molecules and hydrophilic drugs, making drug delivery to the brain difficult.
+
+to over-come, 
+-> lipophilic drug design
+-> nano-particles for targeted delivery
+-> intranasal administration to bypass the blood brain barrier
+
+
+pharmacodynamics
+-> what drugs do to the body?
+
+drug receptor interactions
+--------------------------
+receptors, types, agonists (drugs that activate receptors(ex: proteins) to produce a response) , antagonists(drugs that block receptors activation (no response comes)), partial agonists, affinity
+
+receptors example (can be a protein or an enzyme)
+
+
+higher specificity means fewer side effects of a drug
+
+generally when drugs bind with enzymes, they block the activity of that enzyme
+
+
+understanding signal transduction and drug action
+-==================================================
+there are many steps between the drug binding its receptor and the phenotype downstream
+
+
+
+key steps in the drug discovery process
+------------------------------------------
+-------------------------------------------
+-> target identification
+-> target validation
+-> hit identification
+-> hit to lead
+-> lead identification
+-> lead optimization
+
+
+deep learning, machine learning can play a role in target identification of drug discovery process!!
+(if we have a disease, what is a good target to hit (ex. what is a good genome, proteins(enzymes, proteins , receptors), structural RNA, DNA etc.)
+
+approaches for target identification
+-------------------------------------
+-> genomic and proteomic studies, disease pathway analysis, High Throughput Screening, BIOinformatics and AI tools
+
+
+WHAT IS DRUGGABILITY?
+WHAT ARE THE FACTORS THAT INFLUENCE DRUGABBILITY?
+
+
+
+DRUG MOLECULES HAVE A LOT OF RINGS, HAVE A LOT OF DOUBLE BONDS
+
+
+SAR meaning structure activity relationship
+cHECKOUT A COMPUTATIONAL METHOD CALLED A'QSAR' (deep learning related)
+
+
+
+
+Molecular graphs and GNN's
+--------------------------
+
+How can we represent (text or graphs) small molecules?
+
+what are the common molecular representations?
+-> SMILES, SMARTS (a complex version of SMILES), SELFIES (try to check this out if interested in this field. it's like programming language to generate molecules,
+
+every syntactically valid SELFIE decodes to accurate molecule making it useful in machine-learning! it is less human readable than SMILES
+
+), InChl and Molecular Graphs(the most general format)
+
+
+
+
+example of what can we predict by putting a molecule in a GNN (hydrophibicity (important in crossing blood brain barrier) of the molecule)
+
+
+
+what are fingerprints for molecular structures? (vector (hashing involved) type thing for a molecule)
+what is morgan finger prints? how does it work?
+
+morgan fingerprint generation
+
+
+morgan fingerprints are not really a good representation for proteins
+
+
+
+
+applications of molecular graphs in drug discovery
+-> chemical similarity searching
+-> QSAR models
+-> Graph Neural Networks
+-> Structure-Based Drug Design
+
+
+Geometric Deep Learning
+------------------------
+ANYTHING THAT GENERALIZES TO A GRAPH OR A MANIFOLD OR A COLLECTION OF POINTS IS CONSIDERED Geometric Deep Learning
+What is the role of the term "invariance" and "equivariance" in Geometric Deep Learning
+
+Graph Neural Network is deep learning framework that uses graphs to predict different tasks such as a molecules property (soluble or not, a particular site would bind to an enzyme
+
+ or not
+), individual proterty of an atom! or maybe predicting something about a bond!! or let's say given a molecule, is this gonna cross the blood-brain barrier? yes or no!
+
+
+GNN tasks ->
+
+-> GNN output can be classification for each node
+-> GNN output can be Link prediction - goal is to predict the existence of a link between two nodes. input: a graph with some edges missing. output: probability of a link between two nodes
+example: recommending friend connections in a social network or predicting drug target interactions.
+approach: similarity metrics (cosine similarity), binary classifier (MLP)
+
+-> GNN output graph level (need to combine node level features such as Global Sum pooling, Global mean pooling, Global max pooling, Attention-based-pooling) then do classification or regression tasks densely connected layers MLP or maybe we could add an additional special node to the molecule graph node that would be doing the combining part all by it self and make classification or regression!!
+
+
+Now, we'll be going for a little bit specific stuff "generating new molecules!!"
+
+Autoencoders a type of genAI
+compress high dimentional input to low dimensional latent space and reproduce high dimensional output with high fidelity. (what is fidelity?)
+
+what are variational autoencoders? How variational autoencoder has been adapted for chemistry?
+
+if we really wanna understand how complicated models(esm, protein language models, ... etc.) work, we could use sparse auto-encoders !!
+
+what is reparameterization trick in variational auto-encoder?
+variational auto-encoder introduces a tunable hyperparameter Beta 
+
+
+regina bargilay's work called Junction Tree Variational Auto-encoder for Molecular Graph Generation!!
+
+
+paper (from 2020 by MIT) a deep learning approach to antibiotic discovery! (important) (they created molecular graph with the bonds rather than the atoms!!!!)
+
+
+the rise of different startup companies doing drug discovery !!! do try to search about and inquiry about jobs !!!!
+
+
+training neural networks (lecture)
+
+how are we gonna get from molecule's smile strings to a tensor of numbers? what are the problems to going to fixed length vector of numbers?
+
+general thumbrule given by Dr. Eric Alm while training models,
+
+->always have a dataset class
+
+-> user dataloader (operates on the dataset class)
+train loader, shuffle = true (because involved in training will get biased result if shuffle = false)
+test loader,  shuffle = false
+
+
+
+Best advise for emailing professor (from a KAUST PHD student): cold email it has to be catchy and short!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PYMOL a great visualization tool
+
+-> a lot of the analysis done in PyMol is done through the wizards section!
+
+people does pay attention to your talks if your designed protein looks beautiful!
+
+-> install an SSH client extension to your VSCode (why?)
+check on the internet how to setup remote ssh to your vscode
+
+
+
+
+we know than when proteins folded proteins are in their low energy state. in there journey of foldin chaperones ( aka, a friend protein ) helps the protein to fold. exactly how it's done is still Unknooowwn!!!!!!!!!!!
+------------------------------------------------------------------------
+-------------------------------------------------
+
+what are some of the structure prediction metrics? ex: RMSD(Root Mean Square Deviation), IDDT(Local Distance Difference Test), GDT(Global Distance Test), TM (template modeling score) (find out what are their pros and cons pls)
+
+
+protein structure prediction (applications)
+
+-> molecular replacement - predicted protein structure can be used to help find missing (or not sure) X-RAY crystallography, Cryo-EM and NMR-spectroscopy
+
+-> interpreting experimental results (from wetlab) 
+
+-> functional prediction and hypothesis testing - enables generation of structure hypotheses related to function and other key properties
+ex: let's say you claim a particular amino acid has catalytic property. to verify that you may mutate that aminoacid with some other thing and test whether the protein structure has any catalytic property or not
+
+-> it is a starting point for protein engineering and protein design
+
+
+
+
+CASP14 competition - AlphaFold2 Structure Prediction
+------------------------------------------
+-----------------------------------------
+
+Openfold model -> a faithful but trainable reproduction of AlphaFold2
+
+alpha fold2(designed by google deep mind) architecture
+-=-----------------------
+what is the ideal number of recycles?
+
+why we have the option to not choose MultipleSequenceAlignment part ? (if we wanna predict the structure of a denovo (completely new and very few similarity compared to the evolutionary homologous data) protein)
+
+what is the usefulness of MSA? (alternate conformations of protein!)
+
+what is a huge limitation of AlphaFold? -> it is not very much sensitive to point or multipoint mutations!!! they have not solved this problem in alphafold3 too!!
+
+why does dropout increase the diversity of outputs? (it is actually true for any Neural Network!)
+
+can you overcome the point mutation limitation of AlphaFold by increasing the sampling or the number of models you are giving?
+
+what do we mean by saying that the proteins are equivariant, invariant?
+
+alphafold model can deal with equivariant and invariant proteins!
+
+AlphaFold Extension model known as AlphaFold2-MultiMer
+========================================================
+
+AlphaFold Protein Structure Database
+---------------------------------------
+a big database where proteins (entire known human proteins!!) structures that were predicted by AlphaFold is there and we can compare that structure with pdb(protein data bank) crystal structure!!!
+
+
+what does AlphaFold2 Initial Guess model do? where it is different from original alphaFold2? initial guess version can take input as sequence and backbone (from RFdiffussion model or existing crystal structure or existing alphaFold2 structure) to get even more refined backbone instead of original alphaFold!
+
+
+AF2 initial guess vs AF2 original. try to find out the differences pls
+
+AlphaFold-Multimer model?
+
+AF-Cluster (Alfa Fold Cluster!)
+
+Model Evo-Pro 
+
+Model Bind-Craft  (a binder design model creating using the alphaFold2 weights and a very modified inference protocol)
+
+AlphaFold-2 Parameters
+
+
+
+for Homework
+----------------
+
+AlphaFold Model parameters (to keep in mind)
+---------------------------------------------
+num_recyles, max_recycles, recycle_early_stop_tolerance, 
+
+msa_mode (mmseqs2_uniref faster), pair_mode, use_msa, use_env, use_templates
+
+model_controls parameters
+------------------------
+model_type, num_models, rank_by, use_dropout, use_fast_relax, use_gpu_relax
+
+
+Esm Model (Evolutionary Scale Model)
+-------------------------------------
+ESM fold(sequence to structure prediction with confidence (like AlphaFold but the process is difference)), ESM3(Jointly reason accros sequence structure and function)
+
+we have more sequence data(280million) than structure data (240k). ESM fold uses protein language model the embedding of it goes to geometric transformer model (maybe) to predict protein structure. here instead of MSA language model embedding is used.
+
+PLM can perform the following task contact map, secondary structure, mutational effect, function, sequence design
+
+
+ESMS are good for predicting structures for Natural proteins (). But in terms of De-novo proteins, Nobody actually did a benchmark on how good are ESMS in de-novo proteins case.
+
+you can't do a lot of tricks and trickeries with ESM but with AlphaFold you actually can do! (how ?)
+
+ESMfold some limitations are it is not that much less validated than AlphaFold2 is, does not handle multiple states
+
+facebook predicted 700 (roughly all of the natural protein structures) million protein structure using their ESM model. The platform is called ESMAtlas!!
+
+ESM3 a fullStack model (multimodal) very powerfull, very easy to install but very difficult to use, heavily customizable
+
+
+
+protein design field is just at the beginning,
+
+Dr. David Baker said, "look at the vast array of problems that human's face, try and design proteins that solve these problems!! susano from mexico is designing proteins that block the major components of snake venom!!, students are working on improving the efficiency of photosynthesis!!!"
+
+the newest generation of projects in Baker's lab is to design molecular machines or molecular motors (they take fuel and use it to work)!!! 
+
+
+-------------------------------------------------
+total internal reflection fluorescence technique
+-------------------------------------------------
+using optical trap, you can measure the forces introduced by molecular motors
+
+How do these motor proteins are relevant for medicine?
+many different diseases are caused by mutations in molecular motors or proteins associated with these molecular motors.
+for example: mutation in kinesin motors cause neurodegenerative diseases, mutations in cardiac myosin causes familial hypertrophic cardiomyopathy (enlarged heart often happens to athlets!)
+
+another interesting thing is that we can modulate motor protein functions to ameliorate(improve) diseases!
+for example: heartfailure happens due to heart muscle fails to pumping in its usual way. now this happens due to cardiac myosin being slow.
+to solve this problem scientists created a new molecule to modulate the cardiac myosin which happens to pump heart like before! meaning improving heart failure diseases!
+
+many open questions to explore in the future (from video over 10 years ago in 2016 )
+-> how do tens of motors link up to hundreds of different cargos in cells?
+-> how different biophysical properties of motor's tuned by evolution to create very certain types of performance (ex: direction change, velocity change)
+-> what are other ways to modulate motor function to treat other kinds of human diseases?
+                         -------
+                             
+
+David BAKERS LATEST WORK RELATED TO PROTEIN MOTOR OR MACHINES
+---------------------------------------------------------------
+First De-Novo-Designed Random-Protein-Walker!
+
+
+
+
+---
+it's not just the cells that move, but material inside cells can also undergo motion.
+
+
+all of the biological movements are due to the special enzymes called molecular motor proteins which interacts with cytoskeletal tracks
+two types of tracks, one the larger diameter one called microtubules and the other-one called actin filaments
+
+molecular motor examples: myosin (goes through actin track), dynein (goes through microtubule track), kinesin (goes through microtubule track)
+
+these tracks are made of tubulin which are polarized due to which path has minus-end, plus-end. dyenin carries cargo from minues end(peripheral end) to plus-end (centrosom interior of the cell).for kinesin the path way is vice-versa
+
+
+actin(slimmer width than microtubules) filament track: myosin
+-------------------------------------------------------------
+
+actin tends to be more cortical (mane bairer dike) on the other hand microtubule tends to be more interior
+
+
+but these motor proteins that I talked about are famility of many different motor proteins. for example there can be kinesin-1, kinesin-2 ... I hope you get the understanding here!
+
+
+Motor Protein's are actually enzymes!!
+--------------------------------------
+they hydrolyze ATP(is the fuel of majority of protein motors) adenosine tri phosphate
+Hydrolyzing a molecule means using water to break a molecule into smaller pieces by cutting one of its chemical bonds.
+Layman's example: It's like adding water to snip apart a chain into smaller links.
+
+during the ATP hyrolysis cycle(ATP gets decomposed and then gets binded to ATP again) the structure of a protein motor's motor, changes which allows the motor to move further along the track.
+
+/*
+
+taken from chatgpt.
+-------------------
+
+Motor proteins act like molecular delivery trucks inside the cell. They carry cargo to the correct destination instead of letting it drift randomly.
+
+Here are some common examples:
+
+Motor protein	Examples of cargo	Where it transports
+Kinesin	Vesicles, mitochondria, lysosomes, mRNA, proteins	Usually from the cell center toward the cell edge (plus end of microtubules)
+Dynein	Endosomes, damaged organelles, signaling molecules, viruses (which some viruses hijack)	Usually from the cell edge back toward the nucleus (minus end of microtubules)
+Myosin	Secretory vesicles, pigment granules, organelles	Along actin filaments, especially near the cell membrane
+
+*/
+
+compared to car engine, the protein motors are very much efficient in converting energies to productive work 60% vs 10%!! (I believe we have a lot to learn from protein motors motility so we could adapt something I guess!!)
+
+relative to their size, protein motor's are faster than motor car!!
+
+
+
+What do cytoskeletal motor's do in cells?
+
+
+
+
+
+
+
+
+
+
+
+

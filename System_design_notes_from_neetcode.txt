@@ -1,0 +1,100 @@
+Design requirements
+
+availability, throughput, reliability, latency, redundancy, faulttaulerance
+
+if we create multiple servers in different parts of the world, then that would prove to be a good large scalable system
+
+
+
+
+
+
+
+HTTP2 can replace websockets!!
+
+
+3 API paradigms that you need to be familiar with. these are respectively REST, GraphQL and GRPc (learn their pros and cons)
+
+API does not bound by the ones mentioned above. API is Application-programming-interface. imagine an object called car which can have several functions to access its resources . it is also an API!!
+
+
+REST is not HTTP!! (rest is a type of restriction rules over http)
+
+REST API's are stateless (to give an example of it, learn pagination) due to REST API'S being stateless, we can include multiple servers
+
+for REST the most common dataformat is Json.
+
+try to understand the pros and cons of REST, GrpC and GraphQL.
+REST is the most common form
+
+
+
+
+
+
+
+
+
+API DESIGN
+===========
+
+very important concept. make sure you design backward compatable API's with proper versioning!
+
+it is very very important to have pagination in your api design if you are listing a huge amount of data!!!
+
+you want your api to be backward compatible, clearly defined, not getting conflict with each other, having pagination
+
+
+
+
+
+
+CACHING_
+----------------
+
+caching doesn't just happen in client side, it happens in the server side also. While client communicates with the server, clinet disk can play the role of a cache which stores static JavaScript of the request page (may store for some time being). in the client side, key value pair memory aka redis could play the role of cache.
+
+there are several caching strategies available. These are respectively LRU (eviction policy Least Recently Used), LFU (eviction policy Least Frequently Used), Write Around cache, Write through Cache, Write Back Cache.
+
+
+
+CDN
+----
+CDN's are a server(or I could say dumb server) that has the static content_(images, videos) of the origin server. they increase reliability, availability, decreases the latency for static data (because the CDN's would be much closer to user than the origin server).
+two tyes of CDN's are available: PUSH CDN, PULL CDN
+
+what is cache-control type of a static data? what role CDN plays if cache-control is public or private or none?
+
+
+
+
+pROXY AND LOADBALANCERS
+-------------------------
+
+example of reverse-proxy: loadbalancers, CDN's
+
+different load-balancer algorithm's are round-robin, weighted-round-robin, least request, hashing type ....
+
+we can have layer4 type(TCP which deal with Ip-addresses) loadbalancers, layer7 (application layer which distribute requests to servers based on request data for example for authentication move request tos server1, for tweet related request move to server2 ..... etc. !)
+
+load balancer is a very complicated topic (but we seem like it as very easy thing to implement)
+
+nginx is a reverse proxy server opensource (can be used as loadbalancer), or we could use AWS, GCP provider too which would cost money
+
+to learn more about load-balancers, you can read a paper from google called "Maglev".
+
+
+Consistent hashing (can be for loadbalancing servers, CDN's, db partition-sharding), randezvous hashing
+---------------------------------------
+
+
+
+SQL
+---
+Standard query language: relational dbs are typically stored in Disk (because the data need to be persisted) in a B+ TREE (data structure) fashion.
+major concepts rdbms: schema, join, foreign key
+
+
+
+
+

@@ -1,0 +1,67 @@
+Higher order function is function that can take input as a function
+and/or return a function.
+
+the function that higher order function takes as input and returns as output is called a callback function
+
+
+golang code ---> inside ram ---> code segment ---> data segment ----> stack segment ----> heap segment
+
+garbage collector handles heap segment
+
+
+locating a resource from stack frame to data segment is slow. rather if we can find our required resource from stack frame itself then it would be faster access
+
+after compilation we already have a binary version of the code where we have the code segment code (it is read only) when we run the code then the execution phase code, data, stack and heap segments get allocated to ram to run the whole code!
+
+
+
+
+
+ride sharing app build
+-------------------------
+
+temporal, ki?
+
+kafka
+
+point in polygon algorithm
+
+geojson.io
+
+raycasting algorithm
+
+ area name aka get the area name
+
+dna fingerprinting
+
+bearing
+
+elastic search
+
+saitama
+
+
+
+
+
+
+
+
+
+
+
+Hi Dr. Gabriele,
+
+I hope this message finds you well.
+
+I recently encountered your paper "AstroLoc: Robust Space to Ground Image Localizer" (loved it).
+
+Are you currently involved in the future scope of the work?
+Would it be possible to kindly contribute in the future scope of the work (particularly heavility forested area confusion and cloud occlusion)
+
+Thank you so much for your time and consideration.
+I am looking forward to your response.
+
+Best regards,
+Adith
+https://adith082.github.io/
